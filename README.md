@@ -1,11 +1,13 @@
-# api documentation for  [eslint (v3.18.0)](http://eslint.org)  [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-eslint.svg)](https://travis-ci.org/npmdoc/node-npmdoc-eslint)
+# api documentation for  [eslint (v3.19.0)](http://eslint.org)  [![npm package](https://img.shields.io/npm/v/npmdoc-eslint.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-eslint) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-eslint.svg)](https://travis-ci.org/npmdoc/node-npmdoc-eslint)
 #### An AST-based pattern checker for JavaScript.
 
 [![NPM](https://nodei.co/npm/eslint.png?downloads=true)](https://www.npmjs.com/package/eslint)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-eslint/build/screen-capture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-eslint_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-eslint/build..beta..travis-ci.org/apidoc.html)
+[![apidoc](https://npmdoc.github.io/node-npmdoc-eslint/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-eslint_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-eslint/build..beta..travis-ci.org/apidoc.html)
 
-![package-listing](https://npmdoc.github.io/node-npmdoc-eslint/build/screen-capture.npmPackageListing.svg)
+![npmPackageListing](https://npmdoc.github.io/node-npmdoc-eslint/build/screenCapture.npmPackageListing.svg)
+
+![npmPackageDependencyTree](https://npmdoc.github.io/node-npmdoc-eslint/build/screenCapture.npmPackageDependencyTree.svg)
 
 
 
@@ -63,47 +65,47 @@
     },
     "description": "An AST-based pattern checker for JavaScript.",
     "devDependencies": {
-        "babel-polyfill": "^6.9.1",
-        "babel-preset-es2015": "^6.9.0",
+        "babel-polyfill": "^6.23.0",
+        "babel-preset-es2015": "^6.24.0",
         "babelify": "^7.3.0",
-        "beefy": "^2.0.0",
-        "brfs": "0.0.9",
-        "browserify": "^12.0.1",
+        "beefy": "^2.1.8",
+        "brfs": "1.4.3",
+        "browserify": "^14.1.0",
         "chai": "^3.5.0",
-        "cheerio": "^0.19.0",
-        "coveralls": "^2.11.16",
-        "dateformat": "^1.0.8",
-        "ejs": "^2.3.3",
+        "cheerio": "^0.22.0",
+        "coveralls": "^2.12.0",
+        "dateformat": "^2.0.0",
+        "ejs": "^2.5.6",
         "eslint-plugin-eslint-plugin": "^0.7.1",
-        "eslint-plugin-node": "^4.1.0",
-        "eslint-release": "^0.10.0",
-        "esprima": "^2.4.1",
+        "eslint-plugin-node": "^4.2.1",
+        "eslint-release": "^0.10.1",
+        "esprima": "^3.1.3",
         "esprima-fb": "^15001.1001.0-dev-harmony-fb",
-        "istanbul": "^0.4.0",
-        "jsdoc": "^3.3.0-beta1",
-        "karma": "^0.13.22",
+        "istanbul": "^0.4.5",
+        "jsdoc": "^3.4.3",
+        "karma": "^1.5.0",
         "karma-babel-preprocessor": "^6.0.1",
-        "karma-mocha": "^1.0.1",
-        "karma-mocha-reporter": "^2.0.3",
-        "karma-phantomjs-launcher": "^1.0.0",
-        "leche": "^2.1.1",
+        "karma-mocha": "^1.3.0",
+        "karma-mocha-reporter": "^2.2.2",
+        "karma-phantomjs-launcher": "^1.0.4",
+        "leche": "^2.1.2",
         "load-perf": "^0.2.0",
-        "markdownlint": "^0.3.1",
-        "mocha": "^2.4.5",
+        "markdownlint": "^0.4.0",
+        "mocha": "^3.2.0",
         "mock-fs": "^4.2.0",
-        "npm-license": "^0.3.2",
-        "phantomjs-prebuilt": "^2.1.7",
-        "proxyquire": "^1.7.10",
-        "semver": "^5.0.3",
-        "shelljs-nodecli": "~0.1.0",
-        "sinon": "^1.17.2",
+        "npm-license": "^0.3.3",
+        "phantomjs-prebuilt": "^2.1.14",
+        "proxyquire": "^1.7.11",
+        "semver": "^5.3.0",
+        "shelljs-nodecli": "~0.1.1",
+        "sinon": "^2.0.0",
         "temp": "^0.8.3",
-        "through": "^2.3.6"
+        "through": "^2.3.8"
     },
     "directories": {},
     "dist": {
-        "shasum": "647e985c4ae71502d20ac62c109f66d5104c8a4b",
-        "tarball": "https://registry.npmjs.org/eslint/-/eslint-3.18.0.tgz"
+        "shasum": "c8fc6201c7f40dd08941b87c085767386a679acc",
+        "tarball": "https://registry.npmjs.org/eslint/-/eslint-3.19.0.tgz"
     },
     "engines": {
         "node": ">=4"
@@ -116,7 +118,7 @@
         "lib",
         "messages"
     ],
-    "gitHead": "ca1d478abcc8894ed00bb499dde2f005734ddffe",
+    "gitHead": "421aab44a9c167c82210bed52f68cf990b7edbea",
     "homepage": "http://eslint.org",
     "keywords": [
         "ast",
@@ -163,7 +165,7 @@
         "release": "node Makefile.js release",
         "test": "node Makefile.js test"
     },
-    "version": "3.18.0"
+    "version": "3.19.0"
 }
 ```
 
@@ -180,7 +182,6 @@
 1.  object <span class="apidocSignatureSpan">eslint.</span>RuleTester.prototype
 1.  object <span class="apidocSignatureSpan">eslint.</span>SourceCode.prototype
 1.  object <span class="apidocSignatureSpan">eslint.</span>ast_utils
-1.  object <span class="apidocSignatureSpan">eslint.</span>cli
 1.  object <span class="apidocSignatureSpan">eslint.</span>linter
 1.  object <span class="apidocSignatureSpan">eslint.</span>logging
 1.  object <span class="apidocSignatureSpan">eslint.</span>options
@@ -290,9 +291,6 @@
 1.  object <span class="apidocSignatureSpan">eslint.ast_utils.</span>LINEBREAKS
 1.  object <span class="apidocSignatureSpan">eslint.ast_utils.</span>LINEBREAK_MATCHER
 1.  object <span class="apidocSignatureSpan">eslint.ast_utils.</span>STATEMENT_LIST_PARENTS
-
-#### [module eslint.cli](#apidoc.module.eslint.cli)
-1.  [function <span class="apidocSignatureSpan">eslint.cli.</span>execute (args, text)](#apidoc.element.eslint.cli.execute)
 
 #### [module eslint.linter](#apidoc.module.eslint.linter)
 1.  [function <span class="apidocSignatureSpan">eslint.linter.</span>defaults ()](#apidoc.element.eslint.linter.defaults)
@@ -704,23 +702,7 @@ getErrorResults = function (results) {
 ```
 - example usage
 ```shell
-...
-            if (currentOptions.fix) {
-debug("Fix mode enabled - applying fixes");
-CLIEngine.outputFixes(report);
-            }
-
-            if (currentOptions.quiet) {
-debug("Quiet mode enabled - filtering out warnings");
-report.results = CLIEngine.getErrorResults(report.results);
-            }
-
-            if (printResults(engine, report.results, currentOptions.format, currentOptions.outputFile)) {
-const tooManyWarnings = currentOptions.maxWarnings >= 0 && report.warningCount > currentOptions.maxWarnings;
-
-if (!report.errorCount && tooManyWarnings) {
-    log.error("ESLint found too many warnings (maximum: %s).", currentOptions.maxWarnings);
-...
+n/a
 ```
 
 #### <a name="apidoc.element.eslint.CLIEngine.getFormatter"></a>[function <span class="apidocSignatureSpan">eslint.CLIEngine.</span>getFormatter (format)](#apidoc.element.eslint.CLIEngine.getFormatter)
@@ -762,22 +744,7 @@ getFormatter = function (format) {
 ```
 - example usage
 ```shell
-...
- * @returns {boolean} True if the printing succeeds, false if not.
- * @private
- */
-function printResults(engine, results, format, outputFile) {
-let formatter;
-
-try {
-    formatter = engine.getFormatter(format);
-} catch (e) {
-    log.error(e.message);
-    return false;
-}
-
-const output = formatter(results);
-...
+n/a
 ```
 
 #### <a name="apidoc.element.eslint.CLIEngine.outputFixes"></a>[function <span class="apidocSignatureSpan">eslint.CLIEngine.</span>outputFixes (report)](#apidoc.element.eslint.CLIEngine.outputFixes)
@@ -791,22 +758,7 @@ outputFixes = function (report) {
 ```
 - example usage
 ```shell
-...
-
-const engine = new CLIEngine(translateOptions(currentOptions));
-
-const report = text ? engine.executeOnText(text, currentOptions.stdinFilename, true) : engine.executeOnFiles(files);
-
-if (currentOptions.fix) {
-    debug("Fix mode enabled - applying fixes");
-    CLIEngine.outputFixes(report);
-}
-
-if (currentOptions.quiet) {
-    debug("Quiet mode enabled - filtering out warnings");
-    report.results = CLIEngine.getErrorResults(report.results);
-}
-...
+n/a
 ```
 
 
@@ -1004,23 +956,7 @@ executeOnFiles(patterns) {
 ```
 - example usage
 ```shell
-...
-if (text && currentOptions.fix) {
-    log.error("The --fix option is not available for piped-in code.");
-    return 1;
-}
-
-const engine = new CLIEngine(translateOptions(currentOptions));
-
-const report = text ? engine.executeOnText(text, currentOptions.stdinFilename, true) : engine.executeOnFiles(files);
-
-if (currentOptions.fix) {
-    debug("Fix mode enabled - applying fixes");
-    CLIEngine.outputFixes(report);
-}
-
-if (currentOptions.quiet) {
-...
+n/a
 ```
 
 #### <a name="apidoc.element.eslint.CLIEngine.prototype.executeOnText"></a>[function <span class="apidocSignatureSpan">eslint.CLIEngine.prototype.</span>executeOnText (text, filename, warnIgnored)](#apidoc.element.eslint.CLIEngine.prototype.executeOnText)
@@ -1057,23 +993,7 @@ executeOnText(text, filename, warnIgnored) {
 ```
 - example usage
 ```shell
-...
-if (text && currentOptions.fix) {
-    log.error("The --fix option is not available for piped-in code.");
-    return 1;
-}
-
-const engine = new CLIEngine(translateOptions(currentOptions));
-
-const report = text ? engine.executeOnText(text, currentOptions.stdinFilename, true) : engine.executeOnFiles(files);
-
-if (currentOptions.fix) {
-    debug("Fix mode enabled - applying fixes");
-    CLIEngine.outputFixes(report);
-}
-
-if (currentOptions.quiet) {
-...
+n/a
 ```
 
 #### <a name="apidoc.element.eslint.CLIEngine.prototype.getConfigForFile"></a>[function <span class="apidocSignatureSpan">eslint.CLIEngine.prototype.</span>getConfigForFile (filePath)](#apidoc.element.eslint.CLIEngine.prototype.getConfigForFile)
@@ -1087,22 +1007,7 @@ getConfigForFile(filePath) {
 ```
 - example usage
 ```shell
-...
-} else if (text) {
-    log.error("The --print-config option is not available for piped-in code.");
-    return 1;
-}
-
-const engine = new CLIEngine(translateOptions(currentOptions));
-
-const fileConfig = engine.getConfigForFile(currentOptions.printConfig);
-
-log.info(JSON.stringify(fileConfig, null, "  "));
-return 0;
-        } else if (currentOptions.help || (!files.length && !text)) {
-
-log.info(options.generateHelp());
-...
+n/a
 ```
 
 #### <a name="apidoc.element.eslint.CLIEngine.prototype.getFormatter"></a>[function <span class="apidocSignatureSpan">eslint.CLIEngine.prototype.</span>getFormatter (format)](#apidoc.element.eslint.CLIEngine.prototype.getFormatter)
@@ -1144,22 +1049,7 @@ getFormatter = function (format) {
 ```
 - example usage
 ```shell
-...
- * @returns {boolean} True if the printing succeeds, false if not.
- * @private
- */
-function printResults(engine, results, format, outputFile) {
-let formatter;
-
-try {
-    formatter = engine.getFormatter(format);
-} catch (e) {
-    log.error(e.message);
-    return false;
-}
-
-const output = formatter(results);
-...
+n/a
 ```
 
 #### <a name="apidoc.element.eslint.CLIEngine.prototype.isPathIgnored"></a>[function <span class="apidocSignatureSpan">eslint.CLIEngine.prototype.</span>isPathIgnored (filePath)](#apidoc.element.eslint.CLIEngine.prototype.isPathIgnored)
@@ -3008,95 +2898,6 @@ n/a
 
 
 
-# <a name="apidoc.module.eslint.cli"></a>[module eslint.cli](#apidoc.module.eslint.cli)
-
-#### <a name="apidoc.element.eslint.cli.execute"></a>[function <span class="apidocSignatureSpan">eslint.cli.</span>execute (args, text)](#apidoc.element.eslint.cli.execute)
-- description and source-code
-```javascript
-execute(args, text) {
-
-    let currentOptions;
-
-    try {
-        currentOptions = options.parse(args);
-    } catch (error) {
-        log.error(error.message);
-        return 1;
-    }
-
-    const files = currentOptions._;
-
-    if (currentOptions.version) { // version from package.json
-
-        log.info('v${require("../package.json").version}');
-
-    } else if (currentOptions.printConfig) {
-        if (files.length) {
-            log.error("The --print-config option must be used with exactly one file name.");
-            return 1;
-        } else if (text) {
-            log.error("The --print-config option is not available for piped-in code.");
-            return 1;
-        }
-
-        const engine = new CLIEngine(translateOptions(currentOptions));
-
-        const fileConfig = engine.getConfigForFile(currentOptions.printConfig);
-
-        log.info(JSON.stringify(fileConfig, null, "  "));
-        return 0;
-    } else if (currentOptions.help || (!files.length && !text)) {
-
-        log.info(options.generateHelp());
-
-    } else {
-
-        debug('Running on ${text ? "text" : "files"}');
-
-        // disable --fix for piped-in code until we know how to do it correctly
-        if (text && currentOptions.fix) {
-            log.error("The --fix option is not available for piped-in code.");
-            return 1;
-        }
-
-        const engine = new CLIEngine(translateOptions(currentOptions));
-
-        const report = text ? engine.executeOnText(text, currentOptions.stdinFilename, true) : engine.executeOnFiles(files);
-
-        if (currentOptions.fix) {
-            debug("Fix mode enabled - applying fixes");
-            CLIEngine.outputFixes(report);
-        }
-
-        if (currentOptions.quiet) {
-            debug("Quiet mode enabled - filtering out warnings");
-            report.results = CLIEngine.getErrorResults(report.results);
-        }
-
-        if (printResults(engine, report.results, currentOptions.format, currentOptions.outputFile)) {
-            const tooManyWarnings = currentOptions.maxWarnings >= 0 && report.warningCount > currentOptions.maxWarnings;
-
-            if (!report.errorCount && tooManyWarnings) {
-                log.error("ESLint found too many warnings (maximum: %s).", currentOptions.maxWarnings);
-            }
-
-            return (report.errorCount || tooManyWarnings) ? 1 : 0;
-        }
-        return 1;
-
-
-    }
-
-    return 0;
-}
-```
-- example usage
-```shell
-n/a
-```
-
-
-
 # <a name="apidoc.module.eslint.linter"></a>[module eslint.linter](#apidoc.module.eslint.linter)
 
 #### <a name="apidoc.element.eslint.linter.defaults"></a>[function <span class="apidocSignatureSpan">eslint.linter.</span>defaults ()](#apidoc.element.eslint.linter.defaults)
@@ -3784,17 +3585,18 @@ verify = function (textOrSourceCode, config, filenameOrOptions, saveState) {
     // search and apply "eslint-env *".
     const envInFile = findEslintEnv(text || textOrSourceCode.text);
 
+    config = Object.assign({}, config);
+
     if (envInFile) {
-        if (!config || !config.env) {
-            config = Object.assign({}, config || {}, { env: envInFile });
-        } else {
-            config = Object.assign({}, config);
+        if (config.env) {
             config.env = Object.assign({}, config.env, envInFile);
+        } else {
+            config.env = envInFile;
         }
     }
 
     // process initial config to make it safe to extend
-    config = prepareConfig(config || {});
+    config = prepareConfig(config);
 
     // only do this for text
     if (text !== null) {
@@ -3883,7 +3685,10 @@ verify = function (textOrSourceCode, config, filenameOrOptions, saveState) {
             } catch (ex) {
                 ex.message = 'Error while loading rule '${key}': ${ex.message}';
                 throw ex;
-            } ...
+            }
+        });
+
+        // save config so rules can access as necess ...
 ```
 - example usage
 ```shell
@@ -3903,23 +3708,7 @@ error() {
 ```
 - example usage
 ```shell
-...
- */
-function printResults(engine, results, format, outputFile) {
-let formatter;
-
-try {
-    formatter = engine.getFormatter(format);
-} catch (e) {
-    log.error(e.message);
-    return false;
-}
-
-const output = formatter(results);
-
-if (output) {
-    if (outputFile) {
-...
+n/a
 ```
 
 #### <a name="apidoc.element.eslint.logging.info"></a>[function <span class="apidocSignatureSpan">eslint.logging.</span>info ()](#apidoc.element.eslint.logging.info)
@@ -3931,22 +3720,7 @@ info() {
 ```
 - example usage
 ```shell
-...
-                mkdirp.sync(path.dirname(filePath));
-                fs.writeFileSync(filePath, output);
-            } catch (ex) {
-                log.error("There was a problem writing the output file:\n%s", ex);
-                return false;
-            }
-        } else {
-            log.info(output);
-        }
-    }
-
-    return true;
-
-}
-...
+n/a
 ```
 
 
@@ -4085,23 +3859,7 @@ descParts, desc, preLen, sortedPreLens, maxPreLen, preLenMean, x, padAmount, des
 ```
 - example usage
 ```shell
-...
-
-const fileConfig = engine.getConfigForFile(currentOptions.printConfig);
-
-log.info(JSON.stringify(fileConfig, null, "  "));
-return 0;
-        } else if (currentOptions.help || (!files.length && !text)) {
-
-log.info(options.generateHelp());
-
-        } else {
-
-debug('Running on ${text ? "text" : "files"}');
-
-// disable --fix for piped-in code until we know how to do it correctly
-if (text && currentOptions.fix) {
-...
+n/a
 ```
 
 #### <a name="apidoc.element.eslint.options.generateHelpForOption"></a>[function <span class="apidocSignatureSpan">eslint.options.</span>generateHelpForOption (optionName)](#apidoc.element.eslint.options.generateHelpForOption)
@@ -4273,22 +4031,7 @@ them at the same time.");
 ```
 - example usage
 ```shell
-...
-     * @returns {int} The exit code for the operation.
-     */
-    execute(args, text) {
-
-let currentOptions;
-
-try {
-    currentOptions = options.parse(args);
-} catch (error) {
-    log.error(error.message);
-    return 1;
-}
-
-const files = currentOptions._;
-...
+n/a
 ```
 
 #### <a name="apidoc.element.eslint.options.parseArgv"></a>[function <span class="apidocSignatureSpan">eslint.options.</span>parseArgv (it)](#apidoc.element.eslint.options.parseArgv)
@@ -4800,21 +4543,21 @@ function getHandler(ruleId) {
 - example usage
 ```shell
 ...
-     * @param {string} name - A variable name to find.
-     * @returns {escope.Variable|null} A found variable or 'null'.
-     */
-    getVariableByName(initScope, name) {
-let scope = initScope;
+    rules = require("../lib/rules");
 
-while (scope) {
-    const variable = scope.set.get(name);
+//------------------------------------------------------------------------------
+// Helpers
+//------------------------------------------------------------------------------
 
-    if (variable) {
-        return variable;
+const enabledRules = Object.keys(load()).reduce((result, ruleId) => {
+    if (!rules.get(ruleId).meta.deprecated) {
+        result[ruleId] = "error";
     }
+    return result;
+}, {});
 
-    scope = scope.upper;
-}
+//------------------------------------------------------------------------------
+// Public Interface
 ...
 ```
 
@@ -4869,7 +4612,22 @@ function load(rulesDir, cwd) {
 ```
 - example usage
 ```shell
-n/a
+...
+            config = configToLoad;
+
+            if (config.extends) {
+                config = ConfigFile.applyExtends(config, filePath);
+            }
+        } else {
+            filePath = configToLoad;
+            config = ConfigFile.load(filePath);
+        }
+
+    }
+
+    return config;
+}
+...
 ```
 
 #### <a name="apidoc.element.eslint.rules.testClear"></a>[function <span class="apidocSignatureSpan">eslint.rules.</span>testClear ()](#apidoc.element.eslint.rules.testClear)
