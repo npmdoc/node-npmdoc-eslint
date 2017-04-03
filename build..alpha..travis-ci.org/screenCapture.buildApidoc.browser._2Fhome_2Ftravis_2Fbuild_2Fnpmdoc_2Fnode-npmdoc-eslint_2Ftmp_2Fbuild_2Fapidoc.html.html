@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="http://eslint.org"
-
-    >eslint (v3.19.0)</a>
+    <a href="http://eslint.org">eslint (v3.19.0)</a>
 </h1>
 <h4>An AST-based pattern checker for JavaScript.</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.eslint">module eslint</a><ol>
 
@@ -1653,7 +1646,7 @@
     const cacheFile = getCacheFile(this.options.cacheLocation || this.options.cacheFile, this.options.cwd);
 
     /**
-     * Cache used to avoid operating on files that haven&#x27;t changed since the
+     * Cache used to avoid operating on files that haven't changed since the
      * last successful execution (e.g., file passed linting with no errors and
      * no warnings).
      * @type {Object}
@@ -1664,14 +1657,14 @@
     if (this.options.rulePaths) {
         const cwd = this.options.cwd;
 
-        this.options.rulePaths.forEach(rulesdir =&#x3e; {
+        this.options.rulePaths.forEach(rulesdir =&gt; {
             debug(`Loading rules from ${rulesdir}`);
             rules.load(rulesdir, cwd);
         });
     }
 
-    Object.keys(this.options.rules || {}).forEach(name =&#x3e; {
-        validator.validateRuleOptions(name, this.options.rules[name], &#x22;CLI&#x22;);
+    Object.keys(this.options.rules || {}).forEach(name =&gt; {
+        validator.validateRuleOptions(name, this.options.rules[name], "CLI");
     });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -1775,7 +1768,7 @@
         this[methodName] = tokenStore[methodName].bind(tokenStore);
     }
 
-    // don&#x27;t allow modification of this object
+    // don't allow modification of this object
     Object.freeze(this);
     Object.freeze(this.lines);
 }</pre></li>
@@ -1814,7 +1807,7 @@
         this.parserPath = parserPath;
         this.meta = meta;
 
-        // create a separate copy and freeze it (it&#x27;s not nice to freeze other people&#x27;s objects)
+        // create a separate copy and freeze it (it's not nice to freeze other people's objects)
         this.parserServices = Object.freeze(Object.assign({}, parserServices));
 
         // private.
@@ -1839,18 +1832,18 @@
      * @param {Object=} location The location of the error.
      * @param {string} message The message to display to the user.
      * @param {Object} opts Optional template data which produces a formatted message
-     *     with symbols being replaced by this object&#x27;s values.
+     *     with symbols being replaced by this object's values.
      * @returns {void}
      */
     report(nodeOrDescriptor, location, message, opts) {
 
-        // check to see if it&#x27;s a new style call
+        // check to see if it's a new style call
         if (arguments.length === 1) {
             const descriptor = nodeOrDescriptor;
             let fix = null;
 
-            // if there&#x27;s a fix specified, get it
-            if (typeof descriptor.fix === &#x22;function&#x22;) {
+            // if there's a fix specified, get it
+            if (typeof descriptor.fix === "function") {
                 fix = descriptor.fix(ruleFixer);
             }
 
@@ -1935,7 +1928,7 @@
     const cacheFile = getCacheFile(this.options.cacheLocation || this.options.cacheFile, this.options.cwd);
 
     /**
-     * Cache used to avoid operating on files that haven&#x27;t changed since the
+     * Cache used to avoid operating on files that haven't changed since the
      * last successful execution (e.g., file passed linting with no errors and
      * no warnings).
      * @type {Object}
@@ -1946,14 +1939,14 @@
     if (this.options.rulePaths) {
         const cwd = this.options.cwd;
 
-        this.options.rulePaths.forEach(rulesdir =&#x3e; {
+        this.options.rulePaths.forEach(rulesdir =&gt; {
             debug(`Loading rules from ${rulesdir}`);
             rules.load(rulesdir, cwd);
         });
     }
 
-    Object.keys(this.options.rules || {}).forEach(name =&#x3e; {
-        validator.validateRuleOptions(name, this.options.rules[name], &#x22;CLI&#x22;);
+    Object.keys(this.options.rules || {}).forEach(name =&gt; {
+        validator.validateRuleOptions(name, this.options.rules[name], "CLI");
     });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -1971,10 +1964,10 @@
     <li>description and source-code<pre class="apidocCodePre">getErrorResults = function (results) {
     const filtered = [];
 
-    results.forEach(result =&#x3e; {
+    results.forEach(result =&gt; {
         const filteredMessages = result.messages.filter(isErrorMessage);
 
-        if (filteredMessages.length &#x3e; 0) {
+        if (filteredMessages.length &gt; 0) {
             filtered.push(
                 Object.assign(result, {
                     messages: filteredMessages,
@@ -2004,16 +1997,16 @@
     let formatterPath;
 
     // default is stylish
-    format = format || &#x22;stylish&#x22;;
+    format = format || "stylish";
 
     // only strings are valid formatters
-    if (typeof format === &#x22;string&#x22;) {
+    if (typeof format === "string") {
 
         // replace \ with / for Windows compatibility
-        format = format.replace(/\\/g, &#x22;/&#x22;);
+        format = format.replace(/\\/g, "/");
 
-        // if there&#x27;s a slash, then it&#x27;s a file
-        if (format.indexOf(&#x22;/&#x22;) &#x3e; -1) {
+        // if there's a slash, then it's a file
+        if (format.indexOf("/") &gt; -1) {
             const cwd = this.options ? this.options.cwd : process.cwd();
 
             formatterPath = path.resolve(cwd, format);
@@ -2045,7 +2038,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">outputFixes = function (report) {
-    report.results.filter(result =&#x3e; result.hasOwnProperty(&#x22;output&#x22;)).forEach(result =&#x3e; {
+    report.results.filter(result =&gt; result.hasOwnProperty("output")).forEach(result =&gt; {
         fs.writeFileSync(result.filePath, result.output);
     });
 }</pre></li>
@@ -2101,7 +2094,7 @@
     const cacheFile = getCacheFile(this.options.cacheLocation || this.options.cacheFile, this.options.cwd);
 
     /**
-     * Cache used to avoid operating on files that haven&#x27;t changed since the
+     * Cache used to avoid operating on files that haven't changed since the
      * last successful execution (e.g., file passed linting with no errors and
      * no warnings).
      * @type {Object}
@@ -2112,14 +2105,14 @@
     if (this.options.rulePaths) {
         const cwd = this.options.cwd;
 
-        this.options.rulePaths.forEach(rulesdir =&#x3e; {
+        this.options.rulePaths.forEach(rulesdir =&gt; {
             debug(`Loading rules from ${rulesdir}`);
             rules.load(rulesdir, cwd);
         });
     }
 
-    Object.keys(this.options.rules || {}).forEach(name =&#x3e; {
-        validator.validateRuleOptions(name, this.options.rules[name], &#x22;CLI&#x22;);
+    Object.keys(this.options.rules || {}).forEach(name =&gt; {
+        validator.validateRuleOptions(name, this.options.rules[name], "CLI");
     });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -2153,7 +2146,7 @@
             prevConfig = {};
         }
 
-        // reuse the previously hashed config if the config hasn&#x27;t changed
+        // reuse the previously hashed config if the config hasn't changed
         if (prevConfig.config !== config) {
 
             /*
@@ -2201,7 +2194,7 @@
             const changed = descriptor.changed || meta.hashOfConfig !== hashOfConfig;
 
             if (!changed) {
-                debug(`Skipping file since hasn&#x27;t changed: ${filename}`);
+                debug(`Skipping file since hasn't changed: ${filename}`);
 
                 /*
                  * Add the the cached results (always will be 0 error and
@@ -2225,11 +2218,11 @@
         if (options.cache) {
 
             /*
-             * if a file contains errors or warnings we don&#x27;t want to
+             * if a file contains errors or warnings we don't want to
              * store the file in the cache so we can guarantee that
              * next execution will also operate on this file
              */
-            if (res.errorCount &#x3e; 0 || res.warningCount &#x3e; 0) {
+            if (res.errorCount &gt; 0 || res.warningCount &gt; 0) {
                 debug(`File has problems, skipping it: ${filename}`);
 
                 // remove the entry from the cache
@@ -2257,7 +2250,7 @@
     patterns = this.resolveFileGlobPatterns(patterns);
     const fileList = globUtil.listFilesToProcess(patterns, options);
 
-    fileList.forEach(fileInfo =&#x3e; {
+    fileList.forEach(fileInfo =&gt; {
         executeOnFile(fileInfo.filename, fileInfo ...</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -2279,11 +2272,11 @@
         ignoredPaths = new IgnoredPaths(options);
 
     // resolve filename based on options.cwd (for reporting, ignoredPaths also resolves)
-    if (filename &#x26;&#x26; !path.isAbsolute(filename)) {
+    if (filename &amp;&amp; !path.isAbsolute(filename)) {
         filename = path.resolve(options.cwd, filename);
     }
 
-    if (filename &#x26;&#x26; ignoredPaths.contains(filename)) {
+    if (filename &amp;&amp; ignoredPaths.contains(filename)) {
         if (warnIgnored) {
             results.push(createIgnoreResult(filename, options.cwd));
         }
@@ -2333,16 +2326,16 @@
     let formatterPath;
 
     // default is stylish
-    format = format || &#x22;stylish&#x22;;
+    format = format || "stylish";
 
     // only strings are valid formatters
-    if (typeof format === &#x22;string&#x22;) {
+    if (typeof format === "string") {
 
         // replace \ with / for Windows compatibility
-        format = format.replace(/\\/g, &#x22;/&#x22;);
+        format = format.replace(/\\/g, "/");
 
-        // if there&#x27;s a slash, then it&#x27;s a file
-        if (format.indexOf(&#x22;/&#x22;) &#x3e; -1) {
+        // if there's a slash, then it's a file
+        if (format.indexOf("/") &gt; -1) {
             const cwd = this.options ? this.options.cwd : process.cwd();
 
             formatterPath = path.resolve(cwd, format);
@@ -2504,8 +2497,8 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">setDefaultConfig = function (config) {
-    if (typeof config !== &#x22;object&#x22;) {
-        throw new Error(&#x22;RuleTester.setDefaultConfig: config must be an object&#x22;);
+    if (typeof config !== "object") {
+        throw new Error("RuleTester.setDefaultConfig: config must be an object");
     }
     defaultConfig = config;
 
@@ -2547,24 +2540,24 @@
     <li>description and source-code<pre class="apidocCodePre">run(ruleName, rule, test) {
 
     const testerConfig = this.testerConfig,
-        requiredScenarios = [&#x22;valid&#x22;, &#x22;invalid&#x22;],
+        requiredScenarios = ["valid", "invalid"],
         scenarioErrors = [],
         result = {};
 
-    if (lodash.isNil(test) || typeof test !== &#x22;object&#x22;) {
+    if (lodash.isNil(test) || typeof test !== "object") {
         throw new Error(`Test Scenarios for rule ${ruleName} : Could not find test scenario object`);
     }
 
-    requiredScenarios.forEach(scenarioType =&#x3e; {
+    requiredScenarios.forEach(scenarioType =&gt; {
         if (lodash.isNil(test[scenarioType])) {
             scenarioErrors.push(`Could not find any ${scenarioType} test scenarios`);
         }
     });
 
-    if (scenarioErrors.length &#x3e; 0) {
+    if (scenarioErrors.length &gt; 0) {
         throw new Error([
             `Test Scenarios for rule ${ruleName} is invalid:`
-        ].concat(scenarioErrors).join(&#x22;\n&#x22;));
+        ].concat(scenarioErrors).join("\n"));
     }
 
 <span class="apidocCodeCommentSpan">    /* eslint-disable no-shadow */
@@ -2580,7 +2573,7 @@
         let config = lodash.cloneDeep(testerConfig),
             code, filename, beforeAST, afterAST;
 
-        if (typeof item === &#x22;string&#x22;) {
+        if (typeof item === "string") {
             code = item;
         } else {
             code = item.code;
@@ -2620,11 +2613,11 @@
             if (validateSchema.errors) {
                 throw new Error([
                     `Schema for rule ${ruleName} is invalid:`
-                ].concat(validateSchema.errors.map(error =&#x3e; `\t${error.field}: ${error.message}`)).join(&#x22;\n&#x22;));
+                ].concat(validateSchema.errors.map(error =&gt; `\t${error.field}: ${error.message}`)).join("\n"));
             }
         }
 
-        validator.validate(config, &#x22;rule-tester&#x22;);
+        validator.validate(config, "rule-tester");
 
         /*
          * Setup AST getters.
@@ -2633,11 +2626,11 @@
          */
         eslint.reset();
 
-        eslint.on(&#x22;Program&#x22;, node =&#x3e; {
+        eslint.on("Program", node =&gt; {
             beforeAST = cloneDeeplyExcludesParent(node);
         });
 
-        eslint.on(&#x22;Program:exit&#x22;, node =&#x3e; {
+        eslint.on("Program:exit", node =&gt; {
             afterAST = node;
         });
 
@@ -2648,7 +2641,7 @@
             rules.get = function(ruleId) {
                 const rule = originalGet(ruleId);
 
-                if (typeof rule === &#x22;function&#x22;) {
+                if (typeof rule === "function") {
                     return function(context) {
                         Object.freeze(context);
                         freezeDeeply(context.options);
@@ -2752,7 +2745,7 @@
         this[methodName] = tokenStore[methodName].bind(tokenStore);
     }
 
-    // don&#x27;t allow modification of this object
+    // don't allow modification of this object
     Object.freeze(this);
     Object.freeze(this.lines);
 }</pre></li>
@@ -2845,7 +2838,7 @@
         this[methodName] = tokenStore[methodName].bind(tokenStore);
     }
 
-    // don&#x27;t allow modification of this object
+    // don't allow modification of this object
     Object.freeze(this);
     Object.freeze(this.lines);
 }</pre></li>
@@ -2882,11 +2875,11 @@
     const trailingComments = node.trailingComments || [];
 
 <span class="apidocCodeCommentSpan">    /*
-     * espree adds a &#x22;comments&#x22; array on Program nodes rather than
+     * espree adds a "comments" array on Program nodes rather than
      * leadingComments/trailingComments. Comments are only left in the
      * Program node comments array if there is no executable code.
      */
-</span>    if (node.type === &#x22;Program&#x22;) {
+</span>    if (node.type === "Program") {
         if (node.body.length === 0) {
             leadingComments = node.comments;
         }
@@ -2902,10 +2895,10 @@
    }
 
    // Checks `@this` in its leading comments for callbacks,
-   // because callbacks don&#x27;t have its JSDoc comment.
+   // because callbacks don't have its JSDoc comment.
    // e.g.
    //     sinon.test(/* @this sinon.Sandbox */function() { this.spy(); });
-   return sourceCode.<span class="apidocCodeKeywordSpan">getComments</span>(node).leading.some(comment =&#x3e; thisTagPattern.test
+   return sourceCode.<span class="apidocCodeKeywordSpan">getComments</span>(node).leading.some(comment =&gt; thisTagPattern.test
 (comment.value));
 }
 
@@ -2927,15 +2920,15 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getIndexFromLoc(loc) {
-    if (typeof loc !== &#x22;object&#x22; || typeof loc.line !== &#x22;number&#x22; || typeof loc.column !== &#x22;number&#x22;) {
-        throw new TypeError(&#x22;Expected `loc` to be an object with numeric `line` and `column` properties.&#x22;);
+    if (typeof loc !== "object" || typeof loc.line !== "number" || typeof loc.column !== "number") {
+        throw new TypeError("Expected `loc` to be an object with numeric `line` and `column` properties.");
     }
 
-    if (loc.line &#x3c;= 0) {
+    if (loc.line &lt;= 0) {
         throw new RangeError(`Line number out of range (line ${loc.line} requested). Line numbers should be 1-based.`);
     }
 
-    if (loc.line &#x3e; this.lineStartIndices.length) {
+    if (loc.line &gt; this.lineStartIndices.length) {
         throw new RangeError(`Line number out of range (line ${loc.line} requested, but only ${this.lineStartIndices.length} lines
  present).`);
     }
@@ -2953,8 +2946,8 @@
      * use getIndexFromLoc consistently without worrying about edge cases at the end of a file.
      */
 </span>    if (
-        loc.line === this.lineStartIndices.length &#x26;&#x26; positionIndex &#x3e; lineEndIndex ||
-        loc.line &#x3c; this.lineStartIndices.length &#x26;&#x26; positionIndex &#x3e;= lineEndIndex
+        loc.line === this.lineStartIndices.length &amp;&amp; positionIndex &gt; lineEndIndex ||
+        loc.line &lt; this.lineStartIndices.length &amp;&amp; positionIndex &gt;= lineEndIndex
     ) {
         throw new RangeError(`Column number out of range (column ${loc.column} requested, but the length of line ${loc.line} is ${
 lineEndIndex - lineStartIndex}).`);
@@ -2979,26 +2972,26 @@ lineEndIndex - lineStartIndex}).`);
     let parent = node.parent;
 
     switch (node.type) {
-        case &#x22;ClassDeclaration&#x22;:
-        case &#x22;FunctionDeclaration&#x22;:
+        case "ClassDeclaration":
+        case "FunctionDeclaration":
             if (looksLikeExport(parent)) {
                 return findJSDocComment(parent.leadingComments, parent.loc.start.line);
             }
             return findJSDocComment(node.leadingComments, node.loc.start.line);
 
-        case &#x22;ClassExpression&#x22;:
+        case "ClassExpression":
             return findJSDocComment(parent.parent.leadingComments, parent.parent.loc.start.line);
 
-        case &#x22;ArrowFunctionExpression&#x22;:
-        case &#x22;FunctionExpression&#x22;:
+        case "ArrowFunctionExpression":
+        case "FunctionExpression":
 
-            if (parent.type !== &#x22;CallExpression&#x22; &#x26;&#x26; parent.type !== &#x22;NewExpression&#x22;) {
-                while (parent &#x26;&#x26; !parent.leadingComments &#x26;&#x26; !/Function/.test(parent.type) &#x26;&#x26; parent.type !== &#x22;MethodDefinition&#x22; &#x26;&#x26;
-parent.type !== &#x22;Property&#x22;) {
+            if (parent.type !== "CallExpression" &amp;&amp; parent.type !== "NewExpression") {
+                while (parent &amp;&amp; !parent.leadingComments &amp;&amp; !/Function/.test(parent.type) &amp;&amp; parent.type !== "MethodDefinition" &amp;&amp;
+parent.type !== "Property") {
                     parent = parent.parent;
                 }
 
-                return parent &#x26;&#x26; (parent.type !== &#x22;FunctionDeclaration&#x22;) ? findJSDocComment(parent.leadingComments, parent.loc.start
+                return parent &amp;&amp; (parent.type !== "FunctionDeclaration") ? findJSDocComment(parent.leadingComments, parent.loc.start
 .line) : null;
             } else if (node.leadingComments) {
                 return findJSDocComment(node.leadingComments, node.loc.start.line);
@@ -3020,12 +3013,12 @@ parent.type !== &#x22;Property&#x22;) {
 function hasJSDocThisTag(node, sourceCode) {
 const jsdocComment = sourceCode.<span class="apidocCodeKeywordSpan">getJSDocComment</span>(node);
 
-if (jsdocComment &#x26;&#x26; thisTagPattern.test(jsdocComment.value)) {
+if (jsdocComment &amp;&amp; thisTagPattern.test(jsdocComment.value)) {
     return true;
 }
 
 // Checks `@this` in its leading comments for callbacks,
-// because callbacks don&#x27;t have its JSDoc comment.
+// because callbacks don't have its JSDoc comment.
 ...</pre></li>
     </ul>
 
@@ -3054,16 +3047,16 @@ if (jsdocComment &#x26;&#x26; thisTagPattern.test(jsdocComment.value)) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getLocFromIndex(index) {
-    if (typeof index !== &#x22;number&#x22;) {
-        throw new TypeError(&#x22;Expected `index` to be a number.&#x22;);
+    if (typeof index !== "number") {
+        throw new TypeError("Expected `index` to be a number.");
     }
 
-    if (index &#x3c; 0 || index &#x3e; this.text.length) {
+    if (index &lt; 0 || index &gt; this.text.length) {
         throw new RangeError(`Index out of range (requested index ${index}, but source text has length ${this.text.length}).`);
     }
 
 <span class="apidocCodeCommentSpan">    /*
-     * For an argument of this.text.length, return the location one &#x22;spot&#x22; past the last character
+     * For an argument of this.text.length, return the location one "spot" past the last character
      * of the file. If the last character is a linebreak, the location will be column 0 of the next
      * line; otherwise, the location will be in the next column on the same line.
      *
@@ -3101,7 +3094,7 @@ if (jsdocComment &#x26;&#x26; thisTagPattern.test(jsdocComment.value)) {
 
     traverser.traverse(this.ast, {
         enter(node, parent) {
-            if (node.range[0] &#x3c;= index &#x26;&#x26; index &#x3c; node.range[1]) {
+            if (node.range[0] &lt;= index &amp;&amp; index &lt; node.range[1]) {
                 result = node;
                 resultParent = parent;
             } else {
@@ -3170,7 +3163,7 @@ getParenthesisedText(sourceCode, node) {
     <li>description and source-code<pre class="apidocCodePre">isSpaceBetweenTokens(first, second) {
     const text = this.text.slice(first.range[1], second.range[0]);
 
-    return /\s/.test(text.replace(/\/\*.*?\*\//g, &#x22;&#x22;));
+    return /\s/.test(text.replace(/\/\*.*?\*\//g, ""));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -3191,28 +3184,28 @@ getParenthesisedText(sourceCode, node) {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">couldBeError(node) {
     switch (node.type) {
-        case &#x22;Identifier&#x22;:
-        case &#x22;CallExpression&#x22;:
-        case &#x22;NewExpression&#x22;:
-        case &#x22;MemberExpression&#x22;:
-        case &#x22;TaggedTemplateExpression&#x22;:
-        case &#x22;YieldExpression&#x22;:
-        case &#x22;AwaitExpression&#x22;:
+        case "Identifier":
+        case "CallExpression":
+        case "NewExpression":
+        case "MemberExpression":
+        case "TaggedTemplateExpression":
+        case "YieldExpression":
+        case "AwaitExpression":
             return true; // possibly an error object.
 
-        case &#x22;AssignmentExpression&#x22;:
+        case "AssignmentExpression":
             return module.exports.couldBeError(node.right);
 
-        case &#x22;SequenceExpression&#x22;: {
+        case "SequenceExpression": {
             const exprs = node.expressions;
 
-            return exprs.length !== 0 &#x26;&#x26; module.exports.couldBeError(exprs[exprs.length - 1]);
+            return exprs.length !== 0 &amp;&amp; module.exports.couldBeError(exprs[exprs.length - 1]);
         }
 
-        case &#x22;LogicalExpression&#x22;:
+        case "LogicalExpression":
             return module.exports.couldBeError(node.left) || module.exports.couldBeError(node.right);
 
-        case &#x22;ConditionalExpression&#x22;:
+        case "ConditionalExpression":
             return module.exports.couldBeError(node.consequent) || module.exports.couldBeError(node.alternate);
 
         default:
@@ -3220,19 +3213,19 @@ getParenthesisedText(sourceCode, node) {
     }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-case &#x22;MemberExpression&#x22;:
-case &#x22;TaggedTemplateExpression&#x22;:
-case &#x22;YieldExpression&#x22;:
-case &#x22;AwaitExpression&#x22;:
+case "MemberExpression":
+case "TaggedTemplateExpression":
+case "YieldExpression":
+case "AwaitExpression":
     return true; // possibly an error object.
 
-case &#x22;AssignmentExpression&#x22;:
+case "AssignmentExpression":
     return module.exports.<span class="apidocCodeKeywordSpan">couldBeError</span>(node.right);
 
-case &#x22;SequenceExpression&#x22;: {
+case "SequenceExpression": {
     const exprs = node.expressions;
 
-    return exprs.length !== 0 &#x26;&#x26; module.exports.couldBeError(exprs[exprs.length - 1]);
+    return exprs.length !== 0 &amp;&amp; module.exports.couldBeError(exprs[exprs.length - 1]);
 }
 ...</pre></li>
     </ul>
@@ -3247,7 +3240,7 @@ case &#x22;SequenceExpression&#x22;: {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function createGlobalLinebreakMatcher() {
-    return new RegExp(LINEBREAK_MATCHER.source, &#x22;g&#x22;);
+    return new RegExp(LINEBREAK_MATCHER.source, "g");
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -3266,20 +3259,20 @@ case &#x22;SequenceExpression&#x22;: {
 
     // Directive prologues only occur at the top of files or functions.
     if (
-        node.type === &#x22;Program&#x22; ||
-        node.type === &#x22;FunctionDeclaration&#x22; ||
-        node.type === &#x22;FunctionExpression&#x22; ||
+        node.type === "Program" ||
+        node.type === "FunctionDeclaration" ||
+        node.type === "FunctionExpression" ||
 
         // Do not check arrow functions with implicit return.
-        // `() =&#x3e; &#x22;use strict&#x22;;` returns the string `&#x22;use strict&#x22;`.
-        (node.type === &#x22;ArrowFunctionExpression&#x22; &#x26;&#x26; node.body.type === &#x22;BlockStatement&#x22;)
+        // `() =&gt; "use strict";` returns the string `"use strict"`.
+        (node.type === "ArrowFunctionExpression" &amp;&amp; node.body.type === "BlockStatement")
     ) {
-        const statements = node.type === &#x22;Program&#x22; ? node.body : node.body.body;
+        const statements = node.type === "Program" ? node.body : node.body.body;
 
         for (const statement of statements) {
             if (
-                statement.type === &#x22;ExpressionStatement&#x22; &#x26;&#x26;
-                statement.expression.type === &#x22;Literal&#x22;
+                statement.type === "ExpressionStatement" &amp;&amp;
+                statement.expression.type === "Literal"
             ) {
                 directives.push(statement);
             } else {
@@ -3307,12 +3300,12 @@ case &#x22;SequenceExpression&#x22;: {
     let start = null;
     let end = null;
 
-    if (node.type === &#x22;ArrowFunctionExpression&#x22;) {
+    if (node.type === "ArrowFunctionExpression") {
         const arrowToken = sourceCode.getTokenBefore(node.body, isArrowToken);
 
         start = arrowToken.loc.start;
         end = arrowToken.loc.end;
-    } else if (parent.type === &#x22;Property&#x22; || parent.type === &#x22;MethodDefinition&#x22;) {
+    } else if (parent.type === "Property" || parent.type === "MethodDefinition") {
         start = parent.loc.start;
         end = getOpeningParenOfParams(node, sourceCode).loc.start;
     } else {
@@ -3341,43 +3334,43 @@ case &#x22;SequenceExpression&#x22;: {
     const parent = node.parent;
     const tokens = [];
 
-    if (parent.type === &#x22;MethodDefinition&#x22; &#x26;&#x26; parent.static) {
-        tokens.push(&#x22;static&#x22;);
+    if (parent.type === "MethodDefinition" &amp;&amp; parent.static) {
+        tokens.push("static");
     }
     if (node.async) {
-        tokens.push(&#x22;async&#x22;);
+        tokens.push("async");
     }
     if (node.generator) {
-        tokens.push(&#x22;generator&#x22;);
+        tokens.push("generator");
     }
 
-    if (node.type === &#x22;ArrowFunctionExpression&#x22;) {
-        tokens.push(&#x22;arrow&#x22;, &#x22;function&#x22;);
-    } else if (parent.type === &#x22;Property&#x22; || parent.type === &#x22;MethodDefinition&#x22;) {
-        if (parent.kind === &#x22;constructor&#x22;) {
-            return &#x22;constructor&#x22;;
-        } else if (parent.kind === &#x22;get&#x22;) {
-            tokens.push(&#x22;getter&#x22;);
-        } else if (parent.kind === &#x22;set&#x22;) {
-            tokens.push(&#x22;setter&#x22;);
+    if (node.type === "ArrowFunctionExpression") {
+        tokens.push("arrow", "function");
+    } else if (parent.type === "Property" || parent.type === "MethodDefinition") {
+        if (parent.kind === "constructor") {
+            return "constructor";
+        } else if (parent.kind === "get") {
+            tokens.push("getter");
+        } else if (parent.kind === "set") {
+            tokens.push("setter");
         } else {
-            tokens.push(&#x22;method&#x22;);
+            tokens.push("method");
         }
     } else {
-        tokens.push(&#x22;function&#x22;);
+        tokens.push("function");
     }
 
     if (node.id) {
-        tokens.push(`&#x27;${node.id.name}&#x27;`);
+        tokens.push(`'${node.id.name}'`);
     } else {
         const name = module.exports.getStaticPropertyName(parent);
 
         if (name) {
-            tokens.push(`&#x27;${name}&#x27;`);
+            tokens.push(`'${name}'`);
         }
     }
 
-    return tokens.join(&#x22; &#x22;);
+    return tokens.join(" ");
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -3392,7 +3385,7 @@ case &#x22;SequenceExpression&#x22;: {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getLabel(node) {
-    if (node.parent.type === &#x22;LabeledStatement&#x22;) {
+    if (node.parent.type === "LabeledStatement") {
         return node.parent.label.name;
     }
     return null;
@@ -3429,12 +3422,12 @@ case &#x22;SequenceExpression&#x22;: {
     let rightToken = sourceCode.getLastToken(node);
 
     while (
-        sourceCode.getTokenBefore(leftToken) &#x26;&#x26;
-        sourceCode.getTokenBefore(leftToken).type === &#x22;Punctuator&#x22; &#x26;&#x26;
-        sourceCode.getTokenBefore(leftToken).value === &#x22;(&#x22; &#x26;&#x26;
-        sourceCode.getTokenAfter(rightToken) &#x26;&#x26;
-        sourceCode.getTokenAfter(rightToken).type === &#x22;Punctuator&#x22; &#x26;&#x26;
-        sourceCode.getTokenAfter(rightToken).value === &#x22;)&#x22;
+        sourceCode.getTokenBefore(leftToken) &amp;&amp;
+        sourceCode.getTokenBefore(leftToken).type === "Punctuator" &amp;&amp;
+        sourceCode.getTokenBefore(leftToken).value === "(" &amp;&amp;
+        sourceCode.getTokenAfter(rightToken) &amp;&amp;
+        sourceCode.getTokenAfter(rightToken).type === "Punctuator" &amp;&amp;
+        sourceCode.getTokenAfter(rightToken).value === ")"
     ) {
         leftToken = sourceCode.getTokenBefore(leftToken);
         rightToken = sourceCode.getTokenAfter(rightToken);
@@ -3456,22 +3449,22 @@ case &#x22;SequenceExpression&#x22;: {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getPrecedence(node) {
     switch (node.type) {
-        case &#x22;SequenceExpression&#x22;:
+        case "SequenceExpression":
             return 0;
 
-        case &#x22;AssignmentExpression&#x22;:
-        case &#x22;ArrowFunctionExpression&#x22;:
-        case &#x22;YieldExpression&#x22;:
+        case "AssignmentExpression":
+        case "ArrowFunctionExpression":
+        case "YieldExpression":
             return 1;
 
-        case &#x22;ConditionalExpression&#x22;:
+        case "ConditionalExpression":
             return 3;
 
-        case &#x22;LogicalExpression&#x22;:
+        case "LogicalExpression":
             switch (node.operator) {
-                case &#x22;||&#x22;:
+                case "||":
                     return 4;
-                case &#x22;&#x26;&#x26;&#x22;:
+                case "&amp;&amp;":
                     return 5;
 
                 // no default
@@ -3479,39 +3472,39 @@ case &#x22;SequenceExpression&#x22;: {
 
 <span class="apidocCodeCommentSpan">            /* falls through */
 </span>
-        case &#x22;BinaryExpression&#x22;:
+        case "BinaryExpression":
 
             switch (node.operator) {
-                case &#x22;|&#x22;:
+                case "|":
                     return 6;
-                case &#x22;^&#x22;:
+                case "^":
                     return 7;
-                case &#x22;&#x26;&#x22;:
+                case "&amp;":
                     return 8;
-                case &#x22;==&#x22;:
-                case &#x22;!=&#x22;:
-                case &#x22;===&#x22;:
-                case &#x22;!==&#x22;:
+                case "==":
+                case "!=":
+                case "===":
+                case "!==":
                     return 9;
-                case &#x22;&#x3c;&#x22;:
-                case &#x22;&#x3c;=&#x22;:
-                case &#x22;&#x3e;&#x22;:
-                case &#x22;&#x3e;=&#x22;:
-                case &#x22;in&#x22;:
-                case &#x22;instanceof&#x22;:
+                case "&lt;":
+                case "&lt;=":
+                case "&gt;":
+                case "&gt;=":
+                case "in":
+                case "instanceof":
                     return 10;
-                case &#x22;&#x3c;&#x3c;&#x22;:
-                case &#x22;&#x3e;&#x3e;&#x22;:
-                case &#x22;&#x3e;&#x3e;&#x3e;&#x22;:
+                case "&lt;&lt;":
+                case "&gt;&gt;":
+                case "&gt;&gt;&gt;":
                     return 11;
-                case &#x22;+&#x22;:
-                case &#x22;-&#x22;:
+                case "+":
+                case "-":
                     return 12;
-                case &#x22;*&#x22;:
-                case &#x22;/&#x22;:
-                case &#x22;%&#x22;:
+                case "*":
+                case "/":
+                case "%":
                     return 13;
-                case &#x22;**&#x22;:
+                case "**":
                     return 15;
 
                 // no default
@@ -3519,22 +3512,22 @@ case &#x22;SequenceExpression&#x22;: {
 
             /* falls through */
 
-        case &#x22;UnaryExpression&#x22;:
-        case &#x22;AwaitExpression&#x22;:
+        case "UnaryExpression":
+        case "AwaitExpression":
             return 16;
 
-        case &#x22;UpdateExpression&#x22;:
+        case "UpdateExpression":
             return 17;
 
-        case &#x22;CallExpression&#x22;:
+        case "CallExpression":
 
             // IIFE is allowed to have parens in any position (#655)
-            if (node.callee.type === &#x22;FunctionExpression&#x22;) {
+            if (node.callee.type === "FunctionExpression") {
                 return -1;
             }
             return 18;
 
-        case &#x22;NewExpression&#x22;:
+        case "NewExpression":
             return 19;
 
         // no default
@@ -3556,30 +3549,30 @@ case &#x22;SequenceExpression&#x22;: {
     <li>description and source-code<pre class="apidocCodePre">getStaticPropertyName(node) {
     let prop;
 
-    switch (node &#x26;&#x26; node.type) {
-        case &#x22;Property&#x22;:
-        case &#x22;MethodDefinition&#x22;:
+    switch (node &amp;&amp; node.type) {
+        case "Property":
+        case "MethodDefinition":
             prop = node.key;
             break;
 
-        case &#x22;MemberExpression&#x22;:
+        case "MemberExpression":
             prop = node.property;
             break;
 
         // no default
     }
 
-    switch (prop &#x26;&#x26; prop.type) {
-        case &#x22;Literal&#x22;:
+    switch (prop &amp;&amp; prop.type) {
+        case "Literal":
             return String(prop.value);
 
-        case &#x22;TemplateLiteral&#x22;:
-            if (prop.expressions.length === 0 &#x26;&#x26; prop.quasis.length === 1) {
+        case "TemplateLiteral":
+            if (prop.expressions.length === 0 &amp;&amp; prop.quasis.length === 1) {
                 return prop.quasis[0].value.cooked;
             }
             break;
 
-        case &#x22;Identifier&#x22;:
+        case "Identifier":
             if (!node.computed) {
                 return prop.name;
             }
@@ -3592,20 +3585,20 @@ case &#x22;SequenceExpression&#x22;: {
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 } else {
-    tokens.push(&#x22;function&#x22;);
+    tokens.push("function");
 }
 
 if (node.id) {
-    tokens.push(`&#x27;${node.id.name}&#x27;`);
+    tokens.push(`'${node.id.name}'`);
 } else {
     const name = module.exports.<span class="apidocCodeKeywordSpan">getStaticPropertyName</span>(parent);
 
     if (name) {
-        tokens.push(`&#x27;${name}&#x27;`);
+        tokens.push(`'${name}'`);
     }
 }
 
-return tokens.join(&#x22; &#x22;);
+return tokens.join(" ");
 ...</pre></li>
     </ul>
 
@@ -3620,17 +3613,17 @@ return tokens.join(&#x22; &#x22;);
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function trailingStatement(node) {
     switch (node.type) {
-    case &#x27;IfStatement&#x27;:
+    case 'IfStatement':
         if (node.alternate != null) {
             return node.alternate;
         }
         return node.consequent;
 
-    case &#x27;LabeledStatement&#x27;:
-    case &#x27;ForStatement&#x27;:
-    case &#x27;ForInStatement&#x27;:
-    case &#x27;WhileStatement&#x27;:
-    case &#x27;WithStatement&#x27;:
+    case 'LabeledStatement':
+    case 'ForStatement':
+    case 'ForInStatement':
+    case 'WhileStatement':
+    case 'WithStatement':
         return node.body;
     }
     return null;
@@ -3697,11 +3690,11 @@ return tokens.join(&#x22; &#x22;);
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function isArrayFromMethod(node) {
     return (
-        node.type === &#x22;MemberExpression&#x22; &#x26;&#x26;
-        node.object.type === &#x22;Identifier&#x22; &#x26;&#x26;
-        arrayOrTypedArrayPattern.test(node.object.name) &#x26;&#x26;
-        node.property.type === &#x22;Identifier&#x22; &#x26;&#x26;
-        node.property.name === &#x22;from&#x22; &#x26;&#x26;
+        node.type === "MemberExpression" &amp;&amp;
+        node.object.type === "Identifier" &amp;&amp;
+        arrayOrTypedArrayPattern.test(node.object.name) &amp;&amp;
+        node.property.type === "Identifier" &amp;&amp;
+        node.property.name === "from" &amp;&amp;
         node.computed === false
     );
 }</pre></li>
@@ -3718,7 +3711,7 @@ return tokens.join(&#x22; &#x22;);
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function isArrowToken(token) {
-    return token.value === &#x22;=&#x3e;&#x22; &#x26;&#x26; token.type === &#x22;Punctuator&#x22;;
+    return token.value === "=&gt;" &amp;&amp; token.type === "Punctuator";
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -3748,7 +3741,7 @@ return tokens.join(&#x22; &#x22;);
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function isCallee(node) {
-    return node.parent.type === &#x22;CallExpression&#x22; &#x26;&#x26; node.parent.callee === node;
+    return node.parent.type === "CallExpression" &amp;&amp; node.parent.callee === node;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -3763,7 +3756,7 @@ return tokens.join(&#x22; &#x22;);
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function isClosingBraceToken(token) {
-    return token.value === &#x22;}&#x22; &#x26;&#x26; token.type === &#x22;Punctuator&#x22;;
+    return token.value === "}" &amp;&amp; token.type === "Punctuator";
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -3778,7 +3771,7 @@ return tokens.join(&#x22; &#x22;);
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function isClosingBracketToken(token) {
-    return token.value === &#x22;]&#x22; &#x26;&#x26; token.type === &#x22;Punctuator&#x22;;
+    return token.value === "]" &amp;&amp; token.type === "Punctuator";
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -3793,7 +3786,7 @@ return tokens.join(&#x22; &#x22;);
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function isClosingParenToken(token) {
-    return token.value === &#x22;)&#x22; &#x26;&#x26; token.type === &#x22;Punctuator&#x22;;
+    return token.value === ")" &amp;&amp; token.type === "Punctuator";
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -3808,7 +3801,7 @@ return tokens.join(&#x22; &#x22;);
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function isColonToken(token) {
-    return token.value === &#x22;:&#x22; &#x26;&#x26; token.type === &#x22;Punctuator&#x22;;
+    return token.value === ":" &amp;&amp; token.type === "Punctuator";
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -3823,7 +3816,7 @@ return tokens.join(&#x22; &#x22;);
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function isCommaToken(token) {
-    return token.value === &#x22;,&#x22; &#x26;&#x26; token.type === &#x22;Punctuator&#x22;;
+    return token.value === "," &amp;&amp; token.type === "Punctuator";
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -3838,7 +3831,7 @@ return tokens.join(&#x22; &#x22;);
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function isCommentToken(token) {
-    return token.type === &#x22;Line&#x22; || token.type === &#x22;Block&#x22; || token.type === &#x22;Shebang&#x22;;
+    return token.type === "Line" || token.type === "Block" || token.type === "Shebang";
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -3853,7 +3846,7 @@ return tokens.join(&#x22; &#x22;);
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">isDecimalInteger(node) {
-    return node.type === &#x22;Literal&#x22; &#x26;&#x26; typeof node.value === &#x22;number&#x22; &#x26;&#x26; /^(0|[1-9]\d*)$/.test(node.raw);
+    return node.type === "Literal" &amp;&amp; typeof node.value === "number" &amp;&amp; /^(0|[1-9]\d*)$/.test(node.raw);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -3882,8 +3875,8 @@ return tokens.join(&#x22; &#x22;);
              * Looks up the destination.
              * e.g., obj.foo = nativeFoo || function foo() { ... };
              */
-</span>            case &#x22;LogicalExpression&#x22;:
-            case &#x22;ConditionalExpression&#x22;:
+</span>            case "LogicalExpression":
+            case "ConditionalExpression":
                 node = parent;
                 break;
 
@@ -3893,7 +3886,7 @@ return tokens.join(&#x22; &#x22;);
             //     // setup...
             //     return function foo() { ... };
             //   })();
-            case &#x22;ReturnStatement&#x22;: {
+            case "ReturnStatement": {
                 const func = getUpperFunction(parent);
 
                 if (func === null || !isCallee(func)) {
@@ -3911,8 +3904,8 @@ return tokens.join(&#x22; &#x22;);
             //   class A { get foo() { ... } }
             //   class A { set foo() { ... } }
             //   class A { static foo() { ... } }
-            case &#x22;Property&#x22;:
-            case &#x22;MethodDefinition&#x22;:
+            case "Property":
+            case "MethodDefinition":
                 return parent.value !== node;
 
             // e.g.
@@ -3920,14 +3913,14 @@ return tokens.join(&#x22; &#x22;);
             //   Foo = function() { ... };
             //   [obj.foo = function foo() { ... }] = a;
             //   [Foo = function() { ... }] = a;
-            case &#x22;AssignmentExpression&#x22;:
-            case &#x22;AssignmentPattern&#x22;:
+            case "AssignmentExpression":
+            case "AssignmentPattern":
                 if (parent.right === node) {
-                    if (parent.left.type === &#x22;MemberExpression&#x22;) {
+                    if (parent.left.type === "MemberExpression") {
                         return false;
                     }
-                    if (isAnonymous &#x26;&#x26;
-                        parent.left.type === &#x22;Identifier&#x22; &#x26;&#x26;
+                    if (isAnonymous &amp;&amp;
+                        parent.left.type === "Identifier" &amp;&amp;
                         startsWithUpperCase(parent.left.name)
                     ) {
                         return false;
@@ -3937,11 +3930,11 @@ return tokens.join(&#x22; &#x22;);
 
             // e.g.
             //   var Foo = function() { ... };
-            case &#x22;VariableDeclarator&#x22;:
+            case "VariableDeclarator":
                 return !(
-                    isAnonymous &#x26;&#x26;
-                    parent.init === node &#x26;&#x26;
-                    parent.id.type === &#x22;Identifier&#x22; &#x26;&#x26;
+                    isAnonymous &amp;&amp;
+                    parent.init === node &amp;&amp;
+                    parent.id.type === "Identifier" &amp;&amp;
                     startsWithUpperCase(parent.id.name)
                 );
 
@@ -3949,10 +3942,10 @@ return tokens.join(&#x22; &#x22;);
             //   var foo = function foo() { ... }.bind(obj);
             //   (function foo() { ... }).call(obj);
             //   (function foo() { ... }).apply(obj, []);
-            case &#x22;MemberExpression&#x22;:
+            case "MemberExpression":
                 return (
                     parent.object !== node ||
-                    parent.property.type !== &#x22;Identifier&#x22; ||
+                    parent.property.type !== "Identifier" ||
                     !bindOrCallOrApplyPattern.test(parent.property.name) ||
                     !isCallee(parent) ||
                     parent.parent.arguments.length === 0 ||
@@ -3963,7 +3956,7 @@ return tokens.join(&#x22; &#x22;);
             //   Reflect.apply(function() {}, obj, []);
             //   Array.from([], function() {}, obj);
             //   list.forEach(function() {}, obj);
-            case &#x22;CallExpression&#x22;:
+            case "CallExpression":
                 if (isReflectApply(parent.callee)) {
                     return (
                         parent.arguments.length !== 3 ||
@@ -3994,11 +3987,11 @@ return tokens.join(&#x22; &#x22;);
     const comment = node.value.trim();
 
     return (
-        node.type === &#x22;Line&#x22; &#x26;&#x26; comment.indexOf(&#x22;eslint-&#x22;) === 0 ||
-        node.type === &#x22;Block&#x22; &#x26;&#x26; (
-            comment.indexOf(&#x22;global &#x22;) === 0 ||
-            comment.indexOf(&#x22;eslint &#x22;) === 0 ||
-            comment.indexOf(&#x22;eslint-&#x22;) === 0
+        node.type === "Line" &amp;&amp; comment.indexOf("eslint-") === 0 ||
+        node.type === "Block" &amp;&amp; (
+            comment.indexOf("global ") === 0 ||
+            comment.indexOf("eslint ") === 0 ||
+            comment.indexOf("eslint-") === 0
         )
     );
 }</pre></li>
@@ -4015,7 +4008,7 @@ return tokens.join(&#x22; &#x22;);
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function isES5Constructor(node) {
-    return (node.id &#x26;&#x26; startsWithUpperCase(node.id.name));
+    return (node.id &amp;&amp; startsWithUpperCase(node.id.name));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -4030,7 +4023,7 @@ return tokens.join(&#x22; &#x22;);
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">isEmptyBlock(node) {
-    return Boolean(node &#x26;&#x26; node.type === &#x22;BlockStatement&#x22; &#x26;&#x26; node.body.length === 0);
+    return Boolean(node &amp;&amp; node.type === "BlockStatement" &amp;&amp; node.body.length === 0);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 /**
@@ -4040,7 +4033,7 @@ return tokens.join(&#x22; &#x22;);
  * @returns {boolean} `true` if the node is an empty function.
  */
 isEmptyFunction(node) {
-    return isFunction(node) &#x26;&#x26; module.exports.<span class="apidocCodeKeywordSpan">isEmptyBlock</span>(node.body);
+    return isFunction(node) &amp;&amp; module.exports.<span class="apidocCodeKeywordSpan">isEmptyBlock</span>(node.body);
 },
 
 /**
@@ -4061,7 +4054,7 @@ isEmptyFunction(node) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">isEmptyFunction(node) {
-    return isFunction(node) &#x26;&#x26; module.exports.isEmptyBlock(node.body);
+    return isFunction(node) &amp;&amp; module.exports.isEmptyBlock(node.body);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -4076,7 +4069,7 @@ isEmptyFunction(node) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function isFunction(node) {
-    return Boolean(node &#x26;&#x26; anyFunctionPattern.test(node.type));
+    return Boolean(node &amp;&amp; anyFunctionPattern.test(node.type));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -4091,7 +4084,7 @@ isEmptyFunction(node) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function isInLoop(node) {
-    while (node &#x26;&#x26; !isFunction(node)) {
+    while (node &amp;&amp; !isFunction(node)) {
         if (isLoop(node)) {
             return true;
         }
@@ -4114,7 +4107,7 @@ isEmptyFunction(node) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function isKeywordToken(token) {
-    return token.type === &#x22;Keyword&#x22;;
+    return token.type === "Keyword";
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -4129,7 +4122,7 @@ isEmptyFunction(node) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function isLoop(node) {
-    return Boolean(node &#x26;&#x26; anyLoopPattern.test(node.type));
+    return Boolean(node &amp;&amp; anyLoopPattern.test(node.type));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -4143,7 +4136,7 @@ isEmptyFunction(node) {
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">token =&#x3e; !f(token)</pre></li>
+    <li>description and source-code<pre class="apidocCodePre">token =&gt; !f(token)</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -4156,7 +4149,7 @@ isEmptyFunction(node) {
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">token =&#x3e; !f(token)</pre></li>
+    <li>description and source-code<pre class="apidocCodePre">token =&gt; !f(token)</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -4169,7 +4162,7 @@ isEmptyFunction(node) {
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">token =&#x3e; !f(token)</pre></li>
+    <li>description and source-code<pre class="apidocCodePre">token =&gt; !f(token)</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -4182,7 +4175,7 @@ isEmptyFunction(node) {
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">token =&#x3e; !f(token)</pre></li>
+    <li>description and source-code<pre class="apidocCodePre">token =&gt; !f(token)</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -4195,7 +4188,7 @@ isEmptyFunction(node) {
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">token =&#x3e; !f(token)</pre></li>
+    <li>description and source-code<pre class="apidocCodePre">token =&gt; !f(token)</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -4208,7 +4201,7 @@ isEmptyFunction(node) {
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">token =&#x3e; !f(token)</pre></li>
+    <li>description and source-code<pre class="apidocCodePre">token =&gt; !f(token)</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -4221,7 +4214,7 @@ isEmptyFunction(node) {
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">token =&#x3e; !f(token)</pre></li>
+    <li>description and source-code<pre class="apidocCodePre">token =&gt; !f(token)</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -4234,7 +4227,7 @@ isEmptyFunction(node) {
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">token =&#x3e; !f(token)</pre></li>
+    <li>description and source-code<pre class="apidocCodePre">token =&gt; !f(token)</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -4247,7 +4240,7 @@ isEmptyFunction(node) {
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">token =&#x3e; !f(token)</pre></li>
+    <li>description and source-code<pre class="apidocCodePre">token =&gt; !f(token)</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -4265,11 +4258,11 @@ isEmptyFunction(node) {
 <span class="apidocCodeCommentSpan">    /*
      * Checking `node.value === null` does not guarantee that a literal is a null literal.
      * When parsing values that cannot be represented in the current environment (e.g. unicode
-     * regexes in Node 4), `node.value` is set to `null` because it wouldn&#x27;t be possible to
+     * regexes in Node 4), `node.value` is set to `null` because it wouldn't be possible to
      * set `node.value` to a unicode regex. To make sure a literal is actually `null`, check
      * `node.regex` instead. Also see: https://github.com/eslint/eslint/issues/8020
      */
-</span>    return node.type === &#x22;Literal&#x22; &#x26;&#x26; node.value === null &#x26;&#x26; !node.regex;
+</span>    return node.type === "Literal" &amp;&amp; node.value === null &amp;&amp; !node.regex;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 * Checks whether or not a node is `null` or `undefined`.
@@ -4280,8 +4273,8 @@ isEmptyFunction(node) {
 function isNullOrUndefined(node) {
    return (
        module.exports.<span class="apidocCodeKeywordSpan">isNullLiteral</span>(node) ||
-       (node.type === &#x22;Identifier&#x22; &#x26;&#x26; node.name === &#x22;undefined&#x22;) ||
-       (node.type === &#x22;UnaryExpression&#x22; &#x26;&#x26; node.operator === &#x22;void&#x22;)
+       (node.type === "Identifier" &amp;&amp; node.name === "undefined") ||
+       (node.type === "UnaryExpression" &amp;&amp; node.operator === "void")
    );
 }
 
@@ -4302,8 +4295,8 @@ function isNullOrUndefined(node) {
     <li>description and source-code<pre class="apidocCodePre">function isNullOrUndefined(node) {
     return (
         module.exports.isNullLiteral(node) ||
-        (node.type === &#x22;Identifier&#x22; &#x26;&#x26; node.name === &#x22;undefined&#x22;) ||
-        (node.type === &#x22;UnaryExpression&#x22; &#x26;&#x26; node.operator === &#x22;void&#x22;)
+        (node.type === "Identifier" &amp;&amp; node.name === "undefined") ||
+        (node.type === "UnaryExpression" &amp;&amp; node.operator === "void")
     );
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -4319,7 +4312,7 @@ function isNullOrUndefined(node) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function isOpeningBraceToken(token) {
-    return token.value === &#x22;{&#x22; &#x26;&#x26; token.type === &#x22;Punctuator&#x22;;
+    return token.value === "{" &amp;&amp; token.type === "Punctuator";
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -4334,7 +4327,7 @@ function isNullOrUndefined(node) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function isOpeningBracketToken(token) {
-    return token.value === &#x22;[&#x22; &#x26;&#x26; token.type === &#x22;Punctuator&#x22;;
+    return token.value === "[" &amp;&amp; token.type === "Punctuator";
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -4349,7 +4342,7 @@ function isNullOrUndefined(node) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function isOpeningParenToken(token) {
-    return token.value === &#x22;(&#x22; &#x26;&#x26; token.type === &#x22;Punctuator&#x22;;
+    return token.value === "(" &amp;&amp; token.type === "Punctuator";
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -4367,9 +4360,9 @@ function isNullOrUndefined(node) {
     const previousToken = sourceCode.getTokenBefore(node),
         nextToken = sourceCode.getTokenAfter(node);
 
-    return Boolean(previousToken &#x26;&#x26; nextToken) &#x26;&#x26;
-        previousToken.value === &#x22;(&#x22; &#x26;&#x26; previousToken.range[1] &#x3c;= node.range[0] &#x26;&#x26;
-        nextToken.value === &#x22;)&#x22; &#x26;&#x26; nextToken.range[0] &#x3e;= node.range[1];
+    return Boolean(previousToken &amp;&amp; nextToken) &amp;&amp;
+        previousToken.value === "(" &amp;&amp; previousToken.range[1] &lt;= node.range[0] &amp;&amp;
+        nextToken.value === ")" &amp;&amp; nextToken.range[0] &gt;= node.range[1];
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -4384,7 +4377,7 @@ function isNullOrUndefined(node) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function isSemicolonToken(token) {
-    return token.value === &#x22;;&#x22; &#x26;&#x26; token.type === &#x22;Punctuator&#x22;;
+    return token.value === ";" &amp;&amp; token.type === "Punctuator";
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -4400,8 +4393,8 @@ function isNullOrUndefined(node) {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">isStringLiteral(node) {
     return (
-        (node.type === &#x22;Literal&#x22; &#x26;&#x26; typeof node.value === &#x22;string&#x22;) ||
-        node.type === &#x22;TemplateLiteral&#x22;
+        (node.type === "Literal" &amp;&amp; typeof node.value === "string") ||
+        node.type === "TemplateLiteral"
     );
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -4417,7 +4410,7 @@ function isNullOrUndefined(node) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">isSurroundedBy(val, character) {
-    return val[0] === character &#x26;&#x26; val[val.length - 1] === character;
+    return val[0] === character &amp;&amp; val[val.length - 1] === character;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -4460,7 +4453,7 @@ function isNullOrUndefined(node) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">defaults = function () {
-    return require(&#x22;../conf/eslint-recommended&#x22;);
+    return require("../conf/eslint-recommended");
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -4490,7 +4483,7 @@ function isNullOrUndefined(node) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">defineRules = function (rulesToDefine) {
-    Object.getOwnPropertyNames(rulesToDefine).forEach(ruleId =&#x3e; {
+    Object.getOwnPropertyNames(rulesToDefine).forEach(ruleId =&gt; {
         defineRule(ruleId, rulesToDefine[ruleId]);
     });
 }</pre></li>
@@ -4550,10 +4543,10 @@ function isNullOrUndefined(node) {
    }
 
    // Checks `@this` in its leading comments for callbacks,
-   // because callbacks don&#x27;t have its JSDoc comment.
+   // because callbacks don't have its JSDoc comment.
    // e.g.
    //     sinon.test(/* @this sinon.Sandbox */function() { this.spy(); });
-   return sourceCode.<span class="apidocCodeKeywordSpan">getComments</span>(node).leading.some(comment =&#x3e; thisTagPattern.test
+   return sourceCode.<span class="apidocCodeKeywordSpan">getComments</span>(node).leading.some(comment =&gt; thisTagPattern.test
 (comment.value));
 }
 
@@ -4575,7 +4568,7 @@ function isNullOrUndefined(node) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getDeclaredVariables = function (node) {
-    return (scopeManager &#x26;&#x26; scopeManager.getDeclaredVariables(node)) || [];
+    return (scopeManager &amp;&amp; scopeManager.getDeclaredVariables(node)) || [];
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -4590,10 +4583,10 @@ function isNullOrUndefined(node) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getFilename = function () {
-    if (typeof currentFilename === &#x22;string&#x22;) {
+    if (typeof currentFilename === "string") {
         return currentFilename;
     }
-    return &#x22;&#x3c;input&#x3e;&#x22;;
+    return "&lt;input&gt;";
 
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -4676,12 +4669,12 @@ function getOpeningParenOfParams(node, sourceCode) {
 function hasJSDocThisTag(node, sourceCode) {
 const jsdocComment = sourceCode.<span class="apidocCodeKeywordSpan">getJSDocComment</span>(node);
 
-if (jsdocComment &#x26;&#x26; thisTagPattern.test(jsdocComment.value)) {
+if (jsdocComment &amp;&amp; thisTagPattern.test(jsdocComment.value)) {
     return true;
 }
 
 // Checks `@this` in its leading comments for callbacks,
-// because callbacks don&#x27;t have its JSDoc comment.
+// because callbacks don't have its JSDoc comment.
 ...</pre></li>
     </ul>
 
@@ -4711,11 +4704,11 @@ let leftToken = sourceCode.getFirstToken(node);
 let rightToken = sourceCode.<span class="apidocCodeKeywordSpan">getLastToken</span>(node);
 
 while (
-    sourceCode.getTokenBefore(leftToken) &#x26;&#x26;
-    sourceCode.getTokenBefore(leftToken).type === &#x22;Punctuator&#x22; &#x26;&#x26;
-    sourceCode.getTokenBefore(leftToken).value === &#x22;(&#x22; &#x26;&#x26;
-    sourceCode.getTokenAfter(rightToken) &#x26;&#x26;
-    sourceCode.getTokenAfter(rightToken).type === &#x22;Punctuator&#x22; &#x26;&#x26;
+    sourceCode.getTokenBefore(leftToken) &amp;&amp;
+    sourceCode.getTokenBefore(leftToken).type === "Punctuator" &amp;&amp;
+    sourceCode.getTokenBefore(leftToken).value === "(" &amp;&amp;
+    sourceCode.getTokenAfter(rightToken) &amp;&amp;
+    sourceCode.getTokenAfter(rightToken).type === "Punctuator" &amp;&amp;
 ...</pre></li>
     </ul>
 
@@ -4782,31 +4775,31 @@ while (
     <li>description and source-code<pre class="apidocCodePre">getScope = function () {
     const parents = traverser.parents();
 
-    // Don&#x27;t do this for Program nodes - they have no parents
+    // Don't do this for Program nodes - they have no parents
     if (parents.length) {
 
         // if current node introduces a scope, add it to the list
         const current = traverser.current();
 
-        if (currentConfig.parserOptions.ecmaVersion &#x3e;= 6) {
-            if ([&#x22;BlockStatement&#x22;, &#x22;SwitchStatement&#x22;, &#x22;CatchClause&#x22;, &#x22;FunctionDeclaration&#x22;, &#x22;FunctionExpression&#x22;, &#x22;ArrowFunctionExpression
-&#x22;].indexOf(current.type) &#x3e;= 0) {
+        if (currentConfig.parserOptions.ecmaVersion &gt;= 6) {
+            if (["BlockStatement", "SwitchStatement", "CatchClause", "FunctionDeclaration", "FunctionExpression", "ArrowFunctionExpression
+"].indexOf(current.type) &gt;= 0) {
                 parents.push(current);
             }
         } else {
-            if ([&#x22;FunctionDeclaration&#x22;, &#x22;FunctionExpression&#x22;, &#x22;ArrowFunctionExpression&#x22;].indexOf(current.type) &#x3e;= 0) {
+            if (["FunctionDeclaration", "FunctionExpression", "ArrowFunctionExpression"].indexOf(current.type) &gt;= 0) {
                 parents.push(current);
             }
         }
 
-        // Ascend the current node&#x27;s parents
-        for (let i = parents.length - 1; i &#x3e;= 0; --i) {
+        // Ascend the current node's parents
+        for (let i = parents.length - 1; i &gt;= 0; --i) {
 
             // Get the innermost scope
             const scope = scopeManager.acquire(parents[i], true);
 
             if (scope) {
-                if (scope.type === &#x22;function-expression-name&#x22;) {
+                if (scope.type === "function-expression-name") {
                     return scope.childScopes[0];
                 }
                 return scope;
@@ -4914,9 +4907,9 @@ function isParenthesised(sourceCode, node) {
     const previousToken = sourceCode.getTokenBefore(node),
         nextToken = sourceCode.<span class="apidocCodeKeywordSpan">getTokenAfter</span>(node);
 
-    return Boolean(previousToken &#x26;&#x26; nextToken) &#x26;&#x26;
-        previousToken.value === &#x22;(&#x22; &#x26;&#x26; previousToken.range[1] &#x3c;= node.range[0] &#x26;&#x26;
-        nextToken.value === &#x22;)&#x22; &#x26;&#x26; nextToken.range[0] &#x3e;= node.range[1];
+    return Boolean(previousToken &amp;&amp; nextToken) &amp;&amp;
+        previousToken.value === "(" &amp;&amp; previousToken.range[1] &lt;= node.range[0] &amp;&amp;
+        nextToken.value === ")" &amp;&amp; nextToken.range[0] &gt;= node.range[1];
 }
 
 /**
@@ -4949,9 +4942,9 @@ function isParenthesised(sourceCode, node) {
     const previousToken = sourceCode.<span class="apidocCodeKeywordSpan">getTokenBefore</span>(node),
         nextToken = sourceCode.getTokenAfter(node);
 
-    return Boolean(previousToken &#x26;&#x26; nextToken) &#x26;&#x26;
-        previousToken.value === &#x22;(&#x22; &#x26;&#x26; previousToken.range[1] &#x3c;= node.range[0] &#x26;&#x26;
-        nextToken.value === &#x22;)&#x22; &#x26;&#x26; nextToken.range[0] &#x3e;= node.range[1];
+    return Boolean(previousToken &amp;&amp; nextToken) &amp;&amp;
+        previousToken.value === "(" &amp;&amp; previousToken.range[1] &lt;= node.range[0] &amp;&amp;
+        nextToken.value === ")" &amp;&amp; nextToken.range[0] &gt;= node.range[1];
 }
 ...</pre></li>
     </ul>
@@ -5056,21 +5049,21 @@ function isParenthesised(sourceCode, node) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">markVariableAsUsed = function (name) {
-    const hasGlobalReturn = currentConfig.parserOptions.ecmaFeatures &#x26;&#x26; currentConfig.parserOptions.ecmaFeatures.globalReturn,
-        specialScope = hasGlobalReturn || currentConfig.parserOptions.sourceType === &#x22;module&#x22;;
+    const hasGlobalReturn = currentConfig.parserOptions.ecmaFeatures &amp;&amp; currentConfig.parserOptions.ecmaFeatures.globalReturn,
+        specialScope = hasGlobalReturn || currentConfig.parserOptions.sourceType === "module";
     let scope = this.getScope(),
         i,
         len;
 
     // Special Node.js scope means we need to start one level deeper
-    if (scope.type === &#x22;global&#x22; &#x26;&#x26; specialScope) {
+    if (scope.type === "global" &amp;&amp; specialScope) {
         scope = scope.childScopes[0];
     }
 
     do {
         const variables = scope.variables;
 
-        for (i = 0, len = variables.length; i &#x3c; len; i++) {
+        for (i = 0, len = variables.length; i &lt; len; i++) {
             if (variables[i].name === name) {
                 variables[i].eslintUsed = true;
                 return true;
@@ -5094,11 +5087,11 @@ function isParenthesised(sourceCode, node) {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">report = function (ruleId, severity, node, location, message, opts, fix, meta) {
     if (node) {
-        assert.strictEqual(typeof node, &#x22;object&#x22;, &#x22;Node must be an object&#x22;);
+        assert.strictEqual(typeof node, "object", "Node must be an object");
     }
 
-    if (typeof location === &#x22;string&#x22;) {
-        assert.ok(node, &#x22;Node must be provided when reporting error if location is not provided&#x22;);
+    if (typeof location === "string") {
+        assert.ok(node, "Node must be provided when reporting error if location is not provided");
 
         meta = fix;
         fix = opts;
@@ -5117,12 +5110,12 @@ function isParenthesised(sourceCode, node) {
     }
 
     if (opts) {
-        message = message.replace(/\{\{\s*([^{}]+?)\s*\}\}/g, (fullMatch, term) =&#x3e; {
+        message = message.replace(/\{\{\s*([^{}]+?)\s*\}\}/g, (fullMatch, term) =&gt; {
             if (term in opts) {
                 return opts[term];
             }
 
-            // Preserve old behavior: If parameter name not provided, don&#x27;t replace it.
+            // Preserve old behavior: If parameter name not provided, don't replace it.
             return fullMatch;
         });
     }
@@ -5133,8 +5126,8 @@ function isParenthesised(sourceCode, node) {
         message,
         line: location.line,
         column: location.column + 1,   // switch to 1-base instead of 0-base
-        nodeType: node &#x26;&#x26; node.type,
-        source: sourceCode.lines[location.line - 1] || &#x22;&#x22;
+        nodeType: node &amp;&amp; node.type,
+        source: sourceCode.lines[location.line - 1] || ""
     };
 
     // Define endLine and endColumn if exists.
@@ -5143,12 +5136,12 @@ function isParenthesised(sourceCode, node) {
         problem.endColumn = endLocation.column + 1;   // switch to 1-base instead of 0-base
     }
 
-    // ensure there&#x27;s range and text properties, otherwise it&#x27;s not a valid fix
-    if (fix &#x26;&#x26; Array.isArray(fix.range) &#x26;&#x26; (typeof fix.text === &#x22;string&#x22;)) {
+    // ensure there's range and text properties, otherwise it's not a valid fix
+    if (fix &amp;&amp; Array.isArray(fix.range) &amp;&amp; (typeof fix.text === "string")) {
 
         // If rule uses fix, has metadata, but has no metadata.fixable, we should throw
-        if (meta &#x26;&#x26; !meta.fixable) {
-            throw new Error(&#x22;Fixable rules should export a `meta.fixable` property.&#x22;);
+        if (meta &amp;&amp; !meta.fixable) {
+            throw new Error("Fixable rules should export a `meta.fixable` property.");
         }
 
         problem.fix = fix;
@@ -5171,7 +5164,7 @@ getSourceCode() {
  * @param {Object=} location The location of the error.
  * @param {string} message The message to display to the user.
  * @param {Object} opts Optional template data which produces a formatted message
- *     with symbols being replaced by this object&#x27;s values.
+ *     with symbols being replaced by this object's values.
  * @returns {void}
 ...</pre></li>
     </ul>
@@ -5208,14 +5201,14 @@ getSourceCode() {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">verify = function (textOrSourceCode, config, filenameOrOptions, saveState) {
-    const text = (typeof textOrSourceCode === &#x22;string&#x22;) ? textOrSourceCode : null;
+    const text = (typeof textOrSourceCode === "string") ? textOrSourceCode : null;
     let ast,
         parseResult,
         shebang,
         allowInlineConfig;
 
     // evaluate arguments
-    if (typeof filenameOrOptions === &#x22;object&#x22;) {
+    if (typeof filenameOrOptions === "object") {
         currentFilename = filenameOrOptions.filename;
         allowInlineConfig = filenameOrOptions.allowInlineConfig;
         saveState = filenameOrOptions.saveState;
@@ -5227,7 +5220,7 @@ getSourceCode() {
         this.reset();
     }
 
-    // search and apply &#x22;eslint-env *&#x22;.
+    // search and apply "eslint-env *".
     const envInFile = findEslintEnv(text || textOrSourceCode.text);
 
     config = Object.assign({}, config);
@@ -5246,14 +5239,14 @@ getSourceCode() {
     // only do this for text
     if (text !== null) {
 
-        // there&#x27;s no input, just exit here
+        // there's no input, just exit here
         if (text.trim().length === 0) {
             sourceCode = new SourceCode(text, blankScriptAST);
             return messages;
         }
 
         parseResult = parse(
-            stripUnicodeBOM(text).replace(/^#!([^\r\n]+)/, (match, captured) =&#x3e; {
+            stripUnicodeBOM(text).replace(/^#!([^\r\n]+)/, (match, captured) =&gt; {
                 shebang = captured;
                 return `//${captured}`;
             }),
@@ -5262,7 +5255,7 @@ getSourceCode() {
         );
 
         // if this result is from a parseForESLint() method, normalize
-        if (parseResult &#x26;&#x26; parseResult.ast) {
+        if (parseResult &amp;&amp; parseResult.ast) {
             ast = parseResult.ast;
         } else {
             ast = parseResult;
@@ -5278,7 +5271,7 @@ getSourceCode() {
         ast = sourceCode.ast;
     }
 
-    // if espree failed to parse the file, there&#x27;s no sense in setting up rules
+    // if espree failed to parse the file, there's no sense in setting up rules
     if (ast) {
 
         // parse global comments and modify config
@@ -5290,7 +5283,7 @@ getSourceCode() {
         ConfigOps.normalize(config);
 
         // enable appropriate rules
-        Object.keys(config.rules).filter(key =&#x3e; getRuleSeverity(config.rules[key]) &#x3e; 0).forEach(key =&#x3e; {
+        Object.keys(config.rules).filter(key =&gt; getRuleSeverity(config.rules[key]) &gt; 0).forEach(key =&gt; {
             let ruleCreator;
 
             ruleCreator = rules.get(key);
@@ -5301,7 +5294,7 @@ getSourceCode() {
                 if (replacementMsg) {
                     ruleCreator = createStubRule(replacementMsg);
                 } else {
-                    ruleCreator = createStubRule(`Definition for rule &#x27;${key}&#x27; was not found`);
+                    ruleCreator = createStubRule(`Definition for rule '${key}' was not found`);
                 }
                 rules.define(key, ruleCreator);
             }
@@ -5314,21 +5307,21 @@ getSourceCode() {
                     key, api, severity, options,
                     config.settings, config.parserOptions, config.parser,
                     ruleCreator.meta,
-                    (parseResult &#x26;&#x26; parseResult.services ? parseResult.services : {})
+                    (parseResult &amp;&amp; parseResult.services ? parseResult.services : {})
                 );
 
                 const rule = ruleCreator.create ? ruleCreator.create(ruleContext)
                     : ruleCreator(ruleContext);
 
                 // add all the selectors from the rule as listeners
-                Object.keys(rule).forEach(selector =&#x3e; {
+                Object.keys(rule).forEach(selector =&gt; {
                     api.on(selector, timing.enabled
                         ? timing.time(key, rule[selector])
                         : rule[selector]
                     );
                 });
             } catch (ex) {
-                ex.message = `Error while loading rule &#x27;${key}&#x27;: ${ex.message}`;
+                ex.message = `Error while loading rule '${key}': ${ex.message}`;
                 throw ex;
             }
         });
@@ -5397,10 +5390,10 @@ descParts, desc, preLen, sortedPreLens, maxPreLen, preLenMean, x, padAmount, des
   ref$ = arg$ != null
     ? arg$
     : {}, showHidden = ref$.showHidden, interpolate = ref$.interpolate;
-  maxWidth = stdout != null &#x26;&#x26; stdout.isTTY ? stdout.columns - 1 : null;
+  maxWidth = stdout != null &amp;&amp; stdout.isTTY ? stdout.columns - 1 : null;
   output = [];
   out = function(it){
-    return output.push(it != null ? it : &#x27;&#x27;);
+    return output.push(it != null ? it : '');
   };
   if (prepend) {
     out(interpolate ? interp(prepend, interpolate) : prepend);
@@ -5410,12 +5403,12 @@ descParts, desc, preLen, sortedPreLens, maxPreLen, preLenMean, x, padAmount, des
   optionCount = 0;
   totalPreLen = 0;
   preLens = [];
-  for (i$ = 0, len$ = (ref$ = options).length; i$ &#x3c; len$; ++i$) {
+  for (i$ = 0, len$ = (ref$ = options).length; i$ &lt; len$; ++i$) {
     item = ref$[i$];
     if (showHidden || !item.hidden) {
       if (that = item.heading) {
         data.push({
-          type: &#x27;heading&#x27;,
+          type: 'heading',
           value: that
         });
       } else {
@@ -5424,15 +5417,15 @@ descParts, desc, preLen, sortedPreLens, maxPreLen, preLenMean, x, padAmount, des
         if ((that = item.description) != null) {
           descParts.push(that);
         }
-        if (that = item[&#x27;enum&#x27;]) {
-          descParts.push(&#x22;either: &#x22; + naturalJoin(that));
+        if (that = item['enum']) {
+          descParts.push("either: " + naturalJoin(that));
         }
-        if (item[&#x27;default&#x27;] &#x26;&#x26; !item.negateName) {
-          descParts.push(&#x22;default: &#x22; + item[&#x27;default&#x27;]);
+        if (item['default'] &amp;&amp; !item.negateName) {
+          descParts.push("default: " + item['default']);
         }
-        desc = descParts.join(&#x27; - &#x27;);
+        desc = descParts.join(' - ');
         data.push({
-          type: &#x27;option&#x27;,
+          type: 'option',
           pre: pre,
           desc: desc,
           descLen: desc.length
@@ -5447,10 +5440,10 @@ descParts, desc, preLen, sortedPreLens, maxPreLen, preLenMean, x, padAmount, des
   sortedPreLens = sort(preLens);
   maxPreLen = sortedPreLens[sortedPreLens.length - 1];
   preLenMean = initialIndent + totalPreLen / optionCount;
-  x = optionCount &#x3e; 2 ? min(preLenMean * maxPadFactor, maxPreLen) : maxPreLen;
-  for (i$ = sortedPreLens.length - 1; i$ &#x3e;= 0; --i$) {
+  x = optionCount &gt; 2 ? min(preLenMean * maxPadFactor, maxPreLen) : maxPreLen;
+  for (i$ = sortedPreLens.length - 1; i$ &gt;= 0; --i$) {
     preLen = sortedPreLens[i$];
-    if (preLen &#x3c;= x) {
+    if (preLen &lt;= x) {
       padAmount = preLen;
       break;
     }
@@ -5459,57 +5452,57 @@ descParts, desc, preLen, sortedPreLens, maxPreLen, preLenMean, x, padAmount, des
   if (maxWidth != null) {
     fullWrapCount = 0;
     partialWrapCount = 0;
-    for (i$ = 0, len$ = data.length; i$ &#x3c; len$; ++i$) {
+    for (i$ = 0, len$ = data.length; i$ &lt; len$; ++i$) {
       item = data[i$];
-      if (item.type === &#x27;option&#x27;) {
+      if (item.type === 'option') {
         pre = item.pre, desc = item.desc, descLen = item.descLen;
         if (descLen === 0) {
-          item.wrap = &#x27;none&#x27;;
+          item.wrap = 'none';
         } else {
           preLen = max(padAmount, pre.length) + initialIndent + descSepLen;
           totalLen = preLen + descLen;
-          if (totalLen &#x3e; maxWidth) {
-            if (descLen / 2.5 &#x3e; maxWidth - preLen) {
+          if (totalLen &gt; maxWidth) {
+            if (descLen / 2.5 &gt; maxWidth - preLen) {
               fullWrapCount++;
-              item.wrap = &#x27;full&#x27;;
+              item.wrap = 'full';
             } else {
               partialWrapCount++;
-              item.wrap = &#x27;partial&#x27;;
+              item.wrap = 'partial';
             }
           } else {
-            item.wrap = &#x27;none&#x27;;
+            item.wrap = 'none';
           }
         }
       }
     }
   }
-  initialSpace = repeatString$(&#x27; &#x27;, initialIndent);
-  wrapAllFull = optionCount &#x3e; 1 &#x26;&#x26; fullWrapCount + partialWrapCount * 0.5 &#x3e; optionCount * 0.5;
-  for (i$ = 0, len$ = data.length; i$ &#x3c; len$; ++i$) {
+  initialSpace = repeatString$(' ', initialIndent);
+  wrapAllFull = optionCount &gt; 1 &amp;&amp; fullWrapCount + partialWrapCount * 0.5 &gt; optionCount * 0.5;
+  for (i$ = 0, len$ = data.length; i$ &lt; len$; ++i$) {
     i = i$;
     item = data[i$];
-    if (item.type === &#x27;heading&#x27;) {
+    if (item.type === 'heading') {
       if (i !== 0) {
         out();
       }
-      out(item.value + &#x22;:&#x22;);
+      out(item.value + ":");
     } else {
       pre = item.pre, desc = item.desc, descLen = item.descLen, wrap = item.wrap;
       if (maxWidth != null) {
-        if (wrapAllFull || wrap === &#x27;full&#x27;) {
+        if (wrapAllFull || wrap === 'full') {
           wrap = wordwrap(initialIndent + secondaryIndent, maxWidth);
-          out(initialSpace + &#x22;&#x22; + pre + &#x22;\n&#x22; + wrap(desc));
+          out(initialSpace + "" + pre + "\n" + wrap(desc));
           continue;
-        } else if (wrap === &#x27;partial&#x27;) {
+        } else if (wrap === 'partial') {
           wrap = wordwrap(initialIndent + descSepLen + max(padAmount, pre.length), maxWidth);
-          out(initialSpace + &#x22;&#x22; + pad(pre, padAmount) + descriptionSeparator + wrap(desc).replace(/^\s+/, &#x27;&#x27;));
+          out(initialSpace + "" + pad(pre, padAmount) + descriptionSeparator + wrap(desc).replace(/^\s+/, ''));
           continue;
         }
       }
       if (descLen === 0) {
-        out(initialSpace + &#x22;&#x22; + pre);
+        out(initialSpace + "" + pre);
       } else {
-        out(initialSpace + &#x22;&#x22; + pad(pre, padAmount) + descriptionSeparator + desc);
+        out(initialSpace + "" + pad(pre, padAmount) + descriptionSeparator + desc);
       }
     }
   }
@@ -5531,7 +5524,7 @@ descParts, desc, preLen, sortedPreLens, maxPreLen, preLenMean, x, padAmount, des
     <li>description and source-code<pre class="apidocCodePre">generateHelpForOption = function (optionName){
   var maxWidth, wrap, option, e, pre, defaultString, restPositionalString, description, fullDescription, that, preDescription, descriptionString
 , exampleString, examples, seperator;
-  maxWidth = stdout != null &#x26;&#x26; stdout.isTTY ? stdout.columns - 1 : null;
+  maxWidth = stdout != null &amp;&amp; stdout.isTTY ? stdout.columns - 1 : null;
   wrap = maxWidth ? wordwrap(maxWidth) : id;
   try {
     option = getOption(dasherize(optionName));
@@ -5540,24 +5533,24 @@ descParts, desc, preLen, sortedPreLens, maxPreLen, preLenMean, x, padAmount, des
     return e.message;
   }
   pre = getPreText(option, helpStyle);
-  defaultString = option[&#x27;default&#x27;] &#x26;&#x26; !option.negateName ? &#x22;\ndefault: &#x22; + option[&#x27;default&#x27;] : &#x27;&#x27;;
-  restPositionalString = option.restPositional ? &#x27;Everything after this option is considered a positional argument, even if it looks
- like an option.&#x27; : &#x27;&#x27;;
-  description = option.longDescription || option.description &#x26;&#x26; sentencize(option.description);
-  fullDescription = description &#x26;&#x26; restPositionalString
-    ? description + &#x22; &#x22; + restPositionalString
-    : (that = description || restPositionalString) ? that : &#x27;&#x27;;
-  preDescription = &#x27;description:&#x27;;
+  defaultString = option['default'] &amp;&amp; !option.negateName ? "\ndefault: " + option['default'] : '';
+  restPositionalString = option.restPositional ? 'Everything after this option is considered a positional argument, even if it looks
+ like an option.' : '';
+  description = option.longDescription || option.description &amp;&amp; sentencize(option.description);
+  fullDescription = description &amp;&amp; restPositionalString
+    ? description + " " + restPositionalString
+    : (that = description || restPositionalString) ? that : '';
+  preDescription = 'description:';
   descriptionString = !fullDescription
-    ? &#x27;&#x27;
-    : maxWidth &#x26;&#x26; fullDescription.length - 1 - preDescription.length &#x3e; maxWidth
-      ? &#x22;\n&#x22; + preDescription + &#x22;\n&#x22; + wrap(fullDescription)
-      : &#x22;\n&#x22; + preDescription + &#x22; &#x22; + fullDescription;
-  exampleString = (that = option.example) ? (examples = [].concat(that), examples.length &#x3e; 1
-    ? &#x22;\nexamples:\n&#x22; + unlines(examples)
-    : &#x22;\nexample: &#x22; + examples[0]) : &#x27;&#x27;;
-  seperator = defaultString || descriptionString || exampleString ? &#x22;\n&#x22; + repeatString$(&#x27;=&#x27;, pre.length) : &#x27;&#x27;;
-  return pre + &#x22;&#x22; + seperator + defaultString + descriptionString + exampleString;
+    ? ''
+    : maxWidth &amp;&amp; fullDescription.length - 1 - preDescription.length &gt; maxWidth
+      ? "\n" + preDescription + "\n" + wrap(fullDescription)
+      : "\n" + preDescription + " " + fullDescription;
+  exampleString = (that = option.example) ? (examples = [].concat(that), examples.length &gt; 1
+    ? "\nexamples:\n" + unlines(examples)
+    : "\nexample: " + examples[0]) : '';
+  seperator = defaultString || descriptionString || exampleString ? "\n" + repeatString$('=', pre.length) : '';
+  return pre + "" + seperator + defaultString + descriptionString + exampleString;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -5591,27 +5584,27 @@ descParts, desc, preLen, sortedPreLens, maxPreLen, preLenMean, x, padAmount, des
     } else {
       try {
         cra = opt.concatRepeatedArrays;
-        if (cra != null &#x26;&#x26; cra[0] &#x26;&#x26; cra[1].oneValuePerFlag &#x26;&#x26; opt.parsedType.length === 1 &#x26;&#x26; opt.parsedType[0].structure === &#x27;array
-&#x27;) {
+        if (cra != null &amp;&amp; cra[0] &amp;&amp; cra[1].oneValuePerFlag &amp;&amp; opt.parsedType.length === 1 &amp;&amp; opt.parsedType[0].structure === 'array
+') {
           val = [parseLevn(opt.parsedType[0].of, value)];
         } else {
           val = parseLevn(opt.parsedType, value);
         }
       } catch (e$) {
         e = e$;
-        throw new Error(&#x22;Invalid value for option &#x27;&#x22; + name + &#x22;&#x27; - expected type &#x22; + opt.type + &#x22;, received value: &#x22; + value + &#x22;.&#x22;);
+        throw new Error("Invalid value for option '" + name + "' - expected type " + opt.type + ", received value: " + value + ".");
       }
-      if (opt[&#x27;enum&#x27;] &#x26;&#x26; !any(function(it){
+      if (opt['enum'] &amp;&amp; !any(function(it){
         return deepIs(it, val);
       }, opt.parsedPossibilities)) {
-        throw new Error(&#x22;Option &#x22; + name + &#x22;: &#x27;&#x22; + val + &#x22;&#x27; not one of &#x22; + naturalJoin(opt[&#x27;enum&#x27;]) + &#x22;.&#x22;);
+        throw new Error("Option " + name + ": '" + val + "' not one of " + naturalJoin(opt['enum']) + ".");
       }
     }
     currentType = toString$.call(obj[name]).slice(8, -1);
     if (obj[name] != null) {
-      if (opt.concatRepeatedArrays != null &#x26;&#x26; opt.concatRepeatedArrays[0] &#x26;&#x26; currentType === &#x27;Array&#x27;) {
+      if (opt.concatRepeatedArrays != null &amp;&amp; opt.concatRepeatedArrays[0] &amp;&amp; currentType === 'Array') {
         obj[name] = obj[name].concat(val);
-      } else if (opt.mergeRepeatedObjects &#x26;&#x26; currentType === &#x27;Object&#x27;) {
+      } else if (opt.mergeRepeatedObjects &amp;&amp; currentType === 'Object') {
         import$(obj[name], val);
       } else {
         obj[name] = val;
@@ -5640,16 +5633,16 @@ descParts, desc, preLen, sortedPreLens, maxPreLen, preLenMean, x, padAmount, des
     if (overrideRequired) {
       return;
     }
-    for (i$ = 0, len$ = (ref$ = required).length; i$ &#x3c; len$; ++i$) {
+    for (i$ = 0, len$ = (ref$ = required).length; i$ &lt; len$; ++i$) {
       name = ref$[i$];
       if (!obj[name]) {
-        throw new Error(&#x22;Option &#x22; + nameToRaw(name) + &#x22; is required.&#x22;);
+        throw new Error("Option " + nameToRaw(name) + " is required.");
       }
     }
   };
   mutuallyExclusiveError = function(first, second){
-    throw new Error(&#x22;The options &#x22; + nameToRaw(first) + &#x22; and &#x22; + nameToRaw(second) + &#x22; are mutually exclusive - you cannot use
-them at the same time.&#x22;);
+    throw new Error("The options " + nameToRaw(first) + " and " + nameToRaw(second) + " are mutually exclusive - you cannot use
+them at the same time.");
   };
   checkMutuallyExclusive = function(){
     var rules, i$, len$, rule, present, j$, len1$, element, k$, len2$, opt;
@@ -5657,13 +5650,13 @@ them at the same time.&#x22;);
     if (!rules) {
       return;
     }
-    for (i$ = 0, len$ = rules.length; i$ &#x3c; len$; ++i$) {
+    for (i$ = 0, len$ = rules.length; i$ &lt; len$; ++i$) {
       rule = rules[i$];
       present = null;
-      for (j$ = 0, len1$ = rule.length; j$ &#x3c; len1$; ++j$) {
+      for (j$ = 0, len1$ = rule.length; j$ &lt; len1$; ++j$) {
         element = rule[j$];
-        if (toString$.call(element).slice(8, -1) === &#x27;Array&#x27;) {
-          for (k$ = 0, len2$ = element.length; k$ &#x3c; len2$; ++k$) {
+        if (toString$.call(element).slice(8, -1) === 'Array') {
+          for (k$ = 0, len2$ = element.length; k$ &lt; len2$; ++k$) {
             opt = element[k$];
             if (opt in obj) {
               if (present != null) {
@@ -5751,7 +5744,7 @@ them at the same time.&#x22;);
         this.parserPath = parserPath;
         this.meta = meta;
 
-        // create a separate copy and freeze it (it&#x27;s not nice to freeze other people&#x27;s objects)
+        // create a separate copy and freeze it (it's not nice to freeze other people's objects)
         this.parserServices = Object.freeze(Object.assign({}, parserServices));
 
         // private.
@@ -5776,18 +5769,18 @@ them at the same time.&#x22;);
      * @param {Object=} location The location of the error.
      * @param {string} message The message to display to the user.
      * @param {Object} opts Optional template data which produces a formatted message
-     *     with symbols being replaced by this object&#x27;s values.
+     *     with symbols being replaced by this object's values.
      * @returns {void}
      */
     report(nodeOrDescriptor, location, message, opts) {
 
-        // check to see if it&#x27;s a new style call
+        // check to see if it's a new style call
         if (arguments.length === 1) {
             const descriptor = nodeOrDescriptor;
             let fix = null;
 
-            // if there&#x27;s a fix specified, get it
-            if (typeof descriptor.fix === &#x22;function&#x22;) {
+            // if there's a fix specified, get it
+            if (typeof descriptor.fix === "function") {
                 fix = descriptor.fix(ruleFixer);
             }
 
@@ -5872,10 +5865,10 @@ them at the same time.&#x22;);
    }
 
    // Checks `@this` in its leading comments for callbacks,
-   // because callbacks don&#x27;t have its JSDoc comment.
+   // because callbacks don't have its JSDoc comment.
    // e.g.
    //     sinon.test(/* @this sinon.Sandbox */function() { this.spy(); });
-   return sourceCode.<span class="apidocCodeKeywordSpan">getComments</span>(node).leading.some(comment =&#x3e; thisTagPattern.test
+   return sourceCode.<span class="apidocCodeKeywordSpan">getComments</span>(node).leading.some(comment =&gt; thisTagPattern.test
 (comment.value));
 }
 
@@ -5985,12 +5978,12 @@ function getOpeningParenOfParams(node, sourceCode) {
 function hasJSDocThisTag(node, sourceCode) {
 const jsdocComment = sourceCode.<span class="apidocCodeKeywordSpan">getJSDocComment</span>(node);
 
-if (jsdocComment &#x26;&#x26; thisTagPattern.test(jsdocComment.value)) {
+if (jsdocComment &amp;&amp; thisTagPattern.test(jsdocComment.value)) {
     return true;
 }
 
 // Checks `@this` in its leading comments for callbacks,
-// because callbacks don&#x27;t have its JSDoc comment.
+// because callbacks don't have its JSDoc comment.
 ...</pre></li>
     </ul>
 
@@ -6017,11 +6010,11 @@ let leftToken = sourceCode.getFirstToken(node);
 let rightToken = sourceCode.<span class="apidocCodeKeywordSpan">getLastToken</span>(node);
 
 while (
-    sourceCode.getTokenBefore(leftToken) &#x26;&#x26;
-    sourceCode.getTokenBefore(leftToken).type === &#x22;Punctuator&#x22; &#x26;&#x26;
-    sourceCode.getTokenBefore(leftToken).value === &#x22;(&#x22; &#x26;&#x26;
-    sourceCode.getTokenAfter(rightToken) &#x26;&#x26;
-    sourceCode.getTokenAfter(rightToken).type === &#x22;Punctuator&#x22; &#x26;&#x26;
+    sourceCode.getTokenBefore(leftToken) &amp;&amp;
+    sourceCode.getTokenBefore(leftToken).type === "Punctuator" &amp;&amp;
+    sourceCode.getTokenBefore(leftToken).value === "(" &amp;&amp;
+    sourceCode.getTokenAfter(rightToken) &amp;&amp;
+    sourceCode.getTokenAfter(rightToken).type === "Punctuator" &amp;&amp;
 ...</pre></li>
     </ul>
 
@@ -6122,9 +6115,9 @@ function isParenthesised(sourceCode, node) {
     const previousToken = sourceCode.getTokenBefore(node),
         nextToken = sourceCode.<span class="apidocCodeKeywordSpan">getTokenAfter</span>(node);
 
-    return Boolean(previousToken &#x26;&#x26; nextToken) &#x26;&#x26;
-        previousToken.value === &#x22;(&#x22; &#x26;&#x26; previousToken.range[1] &#x3c;= node.range[0] &#x26;&#x26;
-        nextToken.value === &#x22;)&#x22; &#x26;&#x26; nextToken.range[0] &#x3e;= node.range[1];
+    return Boolean(previousToken &amp;&amp; nextToken) &amp;&amp;
+        previousToken.value === "(" &amp;&amp; previousToken.range[1] &lt;= node.range[0] &amp;&amp;
+        nextToken.value === ")" &amp;&amp; nextToken.range[0] &gt;= node.range[1];
 }
 
 /**
@@ -6154,9 +6147,9 @@ function isParenthesised(sourceCode, node) {
     const previousToken = sourceCode.<span class="apidocCodeKeywordSpan">getTokenBefore</span>(node),
         nextToken = sourceCode.getTokenAfter(node);
 
-    return Boolean(previousToken &#x26;&#x26; nextToken) &#x26;&#x26;
-        previousToken.value === &#x22;(&#x22; &#x26;&#x26; previousToken.range[1] &#x3c;= node.range[0] &#x26;&#x26;
-        nextToken.value === &#x22;)&#x22; &#x26;&#x26; nextToken.range[0] &#x3e;= node.range[1];
+    return Boolean(previousToken &amp;&amp; nextToken) &amp;&amp;
+        previousToken.value === "(" &amp;&amp; previousToken.range[1] &lt;= node.range[0] &amp;&amp;
+        nextToken.value === ")" &amp;&amp; nextToken.range[0] &gt;= node.range[1];
 }
 ...</pre></li>
     </ul>
@@ -6281,22 +6274,22 @@ function isParenthesised(sourceCode, node) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function getHandler(ruleId) {
-    if (typeof rules[ruleId] === &#x22;string&#x22;) {
+    if (typeof rules[ruleId] === "string") {
         return require(rules[ruleId]);
     }
     return rules[ruleId];
 
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-    rules = require(&#x22;../lib/rules&#x22;);
+    rules = require("../lib/rules");
 
 //------------------------------------------------------------------------------
 // Helpers
 //------------------------------------------------------------------------------
 
-const enabledRules = Object.keys(load()).reduce((result, ruleId) =&#x3e; {
+const enabledRules = Object.keys(load()).reduce((result, ruleId) =&gt; {
     if (!rules.<span class="apidocCodeKeywordSpan">get</span>(ruleId).meta.deprecated) {
-        result[ruleId] = &#x22;error&#x22;;
+        result[ruleId] = "error";
     }
     return result;
 }, {});
@@ -6318,7 +6311,7 @@ const enabledRules = Object.keys(load()).reduce((result, ruleId) =&#x3e; {
     <li>description and source-code<pre class="apidocCodePre">function getAllLoadedRules() {
     const allRules = new Map();
 
-    Object.keys(rules).forEach(name =&#x3e; {
+    Object.keys(rules).forEach(name =&gt; {
         const rule = getHandler(name);
 
         allRules.set(name, rule);
@@ -6339,7 +6332,7 @@ const enabledRules = Object.keys(load()).reduce((result, ruleId) =&#x3e; {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function importPlugin(plugin, pluginName) {
     if (plugin.rules) {
-        Object.keys(plugin.rules).forEach(ruleId =&#x3e; {
+        Object.keys(plugin.rules).forEach(ruleId =&gt; {
             const qualifiedRuleId = `${pluginName}/${ruleId}`,
                 rule = plugin.rules[ruleId];
 
@@ -6362,7 +6355,7 @@ const enabledRules = Object.keys(load()).reduce((result, ruleId) =&#x3e; {
     <li>description and source-code<pre class="apidocCodePre">function load(rulesDir, cwd) {
     const newRules = loadRules(rulesDir, cwd);
 
-    Object.keys(newRules).forEach(ruleId =&#x3e; {
+    Object.keys(newRules).forEach(ruleId =&gt; {
         define(ruleId, newRules[ruleId]);
     });
 }</pre></li>
@@ -6432,7 +6425,7 @@ const enabledRules = Object.keys(load()).reduce((result, ruleId) =&#x3e; {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function time(key, fn) {
-    if (typeof data[key] === &#x22;undefined&#x22;) {
+    if (typeof data[key] === "undefined") {
         data[key] = 0;
     }
 
@@ -6456,3 +6449,4 @@ const enabledRules = Object.keys(load()).reduce((result, ruleId) =&#x3e; {
     ]
 </div>
 </div>
+</body></html>
