@@ -133,7 +133,7 @@
 <tspan x="10" y="2090">  ├── strip-bom@3.0.0 </tspan>
 <tspan x="10" y="2106">  ├── strip-json-comments@2.0.1 </tspan>
 <tspan x="10" y="2122">  ├─┬ table@3.8.3 </tspan>
-<tspan x="10" y="2138">  │ ├─┬ ajv@4.11.6 </tspan>
+<tspan x="10" y="2138">  │ ├─┬ ajv@4.11.7 </tspan>
 <tspan x="10" y="2154">  │ │ └── co@4.6.0 </tspan>
 <tspan x="10" y="2170">  │ ├── ajv-keywords@1.5.1 </tspan>
 <tspan x="10" y="2186">  │ ├── slice-ansi@0.0.4 </tspan>

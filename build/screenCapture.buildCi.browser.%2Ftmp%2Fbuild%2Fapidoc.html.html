@@ -83,6 +83,15 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.rule_context">
+            function <span class="apidocSignatureSpan">eslint.</span>rule_context
+            <span class="apidocSignatureSpan">(ruleId, eslint, severity, options, settings, parserOptions, parserPath, meta, parserServices)</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint.</span>CLIEngine.prototype</span>
 
         </li>
@@ -101,7 +110,49 @@
 
         <li>
 
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint.</span>api</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint.</span>ast_utils</span>
+
+        </li>
+
+        <li>
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint.</span>linter</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint.</span>logging</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint.</span>options</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint.</span>rule_context.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint.</span>rules</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint.</span>timing</span>
 
         </li>
 
@@ -425,6 +476,539 @@
 
     </ol></li>
 
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint.api">module eslint.api</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.api.CLIEngine">
+            function <span class="apidocSignatureSpan">eslint.api.</span>CLIEngine
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.api.RuleTester">
+            function <span class="apidocSignatureSpan">eslint.api.</span>RuleTester
+            <span class="apidocSignatureSpan">(testerConfig)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.api.SourceCode">
+            function <span class="apidocSignatureSpan">eslint.api.</span>SourceCode
+            <span class="apidocSignatureSpan">(text, ast)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint.api.</span>linter</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint.ast_utils">module eslint.ast_utils</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.couldBeError">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>couldBeError
+            <span class="apidocSignatureSpan">(node)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.createGlobalLinebreakMatcher">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>createGlobalLinebreakMatcher
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.getDirectivePrologue">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>getDirectivePrologue
+            <span class="apidocSignatureSpan">(node)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.getFunctionHeadLoc">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>getFunctionHeadLoc
+            <span class="apidocSignatureSpan">(node, sourceCode)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.getFunctionNameWithKind">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>getFunctionNameWithKind
+            <span class="apidocSignatureSpan">(node)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.getLabel">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>getLabel
+            <span class="apidocSignatureSpan">(node)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.getModifyingReferences">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>getModifyingReferences
+            <span class="apidocSignatureSpan">(references)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.getParenthesisedText">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>getParenthesisedText
+            <span class="apidocSignatureSpan">(sourceCode, node)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.getPrecedence">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>getPrecedence
+            <span class="apidocSignatureSpan">(node)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.getStaticPropertyName">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>getStaticPropertyName
+            <span class="apidocSignatureSpan">(node)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.getTrailingStatement">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>getTrailingStatement
+            <span class="apidocSignatureSpan">(node)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.getUpperFunction">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>getUpperFunction
+            <span class="apidocSignatureSpan">(node)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.getVariableByName">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>getVariableByName
+            <span class="apidocSignatureSpan">(initScope, name)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.isArrayFromMethod">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isArrayFromMethod
+            <span class="apidocSignatureSpan">(node)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.isArrowToken">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isArrowToken
+            <span class="apidocSignatureSpan">(token)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.isBreakableStatement">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isBreakableStatement
+            <span class="apidocSignatureSpan">(node)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.isCallee">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isCallee
+            <span class="apidocSignatureSpan">(node)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.isClosingBraceToken">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isClosingBraceToken
+            <span class="apidocSignatureSpan">(token)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.isClosingBracketToken">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isClosingBracketToken
+            <span class="apidocSignatureSpan">(token)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.isClosingParenToken">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isClosingParenToken
+            <span class="apidocSignatureSpan">(token)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.isColonToken">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isColonToken
+            <span class="apidocSignatureSpan">(token)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.isCommaToken">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isCommaToken
+            <span class="apidocSignatureSpan">(token)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.isCommentToken">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isCommentToken
+            <span class="apidocSignatureSpan">(token)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.isDecimalInteger">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isDecimalInteger
+            <span class="apidocSignatureSpan">(node)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.isDefaultThisBinding">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isDefaultThisBinding
+            <span class="apidocSignatureSpan">(node, sourceCode)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.isDirectiveComment">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isDirectiveComment
+            <span class="apidocSignatureSpan">(node)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.isES5Constructor">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isES5Constructor
+            <span class="apidocSignatureSpan">(node)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.isEmptyBlock">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isEmptyBlock
+            <span class="apidocSignatureSpan">(node)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.isEmptyFunction">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isEmptyFunction
+            <span class="apidocSignatureSpan">(node)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.isFunction">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isFunction
+            <span class="apidocSignatureSpan">(node)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.isInLoop">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isInLoop
+            <span class="apidocSignatureSpan">(node)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.isKeywordToken">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isKeywordToken
+            <span class="apidocSignatureSpan">(token)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.isLoop">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isLoop
+            <span class="apidocSignatureSpan">(node)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.isNotClosingBraceToken">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isNotClosingBraceToken
+            <span class="apidocSignatureSpan">(token)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.isNotClosingBracketToken">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isNotClosingBracketToken
+            <span class="apidocSignatureSpan">(token)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.isNotClosingParenToken">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isNotClosingParenToken
+            <span class="apidocSignatureSpan">(token)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.isNotColonToken">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isNotColonToken
+            <span class="apidocSignatureSpan">(token)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.isNotCommaToken">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isNotCommaToken
+            <span class="apidocSignatureSpan">(token)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.isNotOpeningBraceToken">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isNotOpeningBraceToken
+            <span class="apidocSignatureSpan">(token)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.isNotOpeningBracketToken">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isNotOpeningBracketToken
+            <span class="apidocSignatureSpan">(token)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.isNotOpeningParenToken">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isNotOpeningParenToken
+            <span class="apidocSignatureSpan">(token)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.isNotSemicolonToken">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isNotSemicolonToken
+            <span class="apidocSignatureSpan">(token)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.isNullLiteral">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isNullLiteral
+            <span class="apidocSignatureSpan">(node)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.isNullOrUndefined">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isNullOrUndefined
+            <span class="apidocSignatureSpan">(node)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.isOpeningBraceToken">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isOpeningBraceToken
+            <span class="apidocSignatureSpan">(token)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.isOpeningBracketToken">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isOpeningBracketToken
+            <span class="apidocSignatureSpan">(token)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.isOpeningParenToken">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isOpeningParenToken
+            <span class="apidocSignatureSpan">(token)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.isParenthesised">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isParenthesised
+            <span class="apidocSignatureSpan">(sourceCode, node)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.isSemicolonToken">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isSemicolonToken
+            <span class="apidocSignatureSpan">(token)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.isStringLiteral">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isStringLiteral
+            <span class="apidocSignatureSpan">(node)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.isSurroundedBy">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isSurroundedBy
+            <span class="apidocSignatureSpan">(val, character)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.ast_utils.isTokenOnSameLine">
+            function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isTokenOnSameLine
+            <span class="apidocSignatureSpan">(left, right)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint.ast_utils.</span>COMMENTS_IGNORE_PATTERN</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint.ast_utils.</span>LINEBREAKS</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint.ast_utils.</span>LINEBREAK_MATCHER</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint.ast_utils.</span>STATEMENT_LIST_PARENTS</span>
+
+        </li>
+
+    </ol></li>
+
     <li class="apidocModuleLi"><a href="#apidoc.module.eslint.linter">module eslint.linter</a><ol>
 
         <li>
@@ -711,6 +1295,369 @@
 
     </ol></li>
 
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint.logging">module eslint.logging</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.logging.error">
+            function <span class="apidocSignatureSpan">eslint.logging.</span>error
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.logging.info">
+            function <span class="apidocSignatureSpan">eslint.logging.</span>info
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint.options">module eslint.options</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.options.generateHelp">
+            function <span class="apidocSignatureSpan">eslint.options.</span>generateHelp
+            <span class="apidocSignatureSpan">(arg$)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.options.generateHelpForOption">
+            function <span class="apidocSignatureSpan">eslint.options.</span>generateHelpForOption
+            <span class="apidocSignatureSpan">(optionName)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.options.parse">
+            function <span class="apidocSignatureSpan">eslint.options.</span>parse
+            <span class="apidocSignatureSpan">(input, arg$)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.options.parseArgv">
+            function <span class="apidocSignatureSpan">eslint.options.</span>parseArgv
+            <span class="apidocSignatureSpan">(it)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint.rule_context">module eslint.rule_context</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.rule_context.rule_context">
+            function <span class="apidocSignatureSpan">eslint.</span>rule_context
+            <span class="apidocSignatureSpan">(ruleId, eslint, severity, options, settings, parserOptions, parserPath, meta, parserServices)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint.rule_context.prototype">module eslint.rule_context.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.rule_context.prototype.getAllComments">
+            function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>getAllComments
+            <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.rule_context.prototype.getAncestors">
+            function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>getAncestors
+            <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.rule_context.prototype.getComments">
+            function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>getComments
+            <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.rule_context.prototype.getDeclaredVariables">
+            function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>getDeclaredVariables
+            <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.rule_context.prototype.getFilename">
+            function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>getFilename
+            <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.rule_context.prototype.getFirstToken">
+            function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>getFirstToken
+            <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.rule_context.prototype.getFirstTokens">
+            function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>getFirstTokens
+            <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.rule_context.prototype.getJSDocComment">
+            function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>getJSDocComment
+            <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.rule_context.prototype.getLastToken">
+            function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>getLastToken
+            <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.rule_context.prototype.getLastTokens">
+            function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>getLastTokens
+            <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.rule_context.prototype.getNodeByRangeIndex">
+            function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>getNodeByRangeIndex
+            <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.rule_context.prototype.getScope">
+            function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>getScope
+            <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.rule_context.prototype.getSource">
+            function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>getSource
+            <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.rule_context.prototype.getSourceLines">
+            function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>getSourceLines
+            <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.rule_context.prototype.getTokenAfter">
+            function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>getTokenAfter
+            <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.rule_context.prototype.getTokenBefore">
+            function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>getTokenBefore
+            <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.rule_context.prototype.getTokenByRangeStart">
+            function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>getTokenByRangeStart
+            <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.rule_context.prototype.getTokens">
+            function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>getTokens
+            <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.rule_context.prototype.getTokensAfter">
+            function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>getTokensAfter
+            <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.rule_context.prototype.getTokensBefore">
+            function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>getTokensBefore
+            <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.rule_context.prototype.getTokensBetween">
+            function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>getTokensBetween
+            <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.rule_context.prototype.markVariableAsUsed">
+            function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>markVariableAsUsed
+            <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint.rules">module eslint.rules</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.rules.define">
+            function <span class="apidocSignatureSpan">eslint.rules.</span>define
+            <span class="apidocSignatureSpan">(ruleId, ruleModule)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.rules.get">
+            function <span class="apidocSignatureSpan">eslint.rules.</span>get
+            <span class="apidocSignatureSpan">(ruleId)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.rules.getAllLoadedRules">
+            function <span class="apidocSignatureSpan">eslint.rules.</span>getAllLoadedRules
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.rules.importPlugin">
+            function <span class="apidocSignatureSpan">eslint.rules.</span>importPlugin
+            <span class="apidocSignatureSpan">(plugin, pluginName)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.rules.load">
+            function <span class="apidocSignatureSpan">eslint.rules.</span>load
+            <span class="apidocSignatureSpan">(rulesDir, cwd)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.rules.testClear">
+            function <span class="apidocSignatureSpan">eslint.rules.</span>testClear
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.rules.testReset">
+            function <span class="apidocSignatureSpan">eslint.rules.</span>testReset
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint.timing">module eslint.timing</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">eslint.timing.</span>enabled</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint.timing.time">
+            function <span class="apidocSignatureSpan">eslint.timing.</span>time
+            <span class="apidocSignatureSpan">(key, fn)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
 </ol></div>
 
 <div class="apidocSectionDiv">
@@ -870,6 +1817,121 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.rule_context" id="apidoc.element.eslint.rule_context">
+        function <span class="apidocSignatureSpan">eslint.</span>rule_context
+        <span class="apidocSignatureSpan">(ruleId, eslint, severity, options, settings, parserOptions, parserPath, meta, parserServices)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class RuleContext {
+
+<span class="apidocCodeCommentSpan">    /**
+     * @param {string} ruleId The ID of the rule using this object.
+     * @param {eslint} eslint The eslint object.
+     * @param {number} severity The configured severity level of the rule.
+     * @param {Array} options The configuration information to be added to the rule.
+     * @param {Object} settings The configuration settings passed from the config file.
+     * @param {Object} parserOptions The parserOptions settings passed from the config file.
+     * @param {Object} parserPath The parser setting passed from the config file.
+     * @param {Object} meta The metadata of the rule
+     * @param {Object} parserServices The parser services for the rule.
+     */
+</span>    constructor(ruleId, eslint, severity, options, settings, parserOptions, parserPath, meta, parserServices) {
+
+        // public.
+        this.id = ruleId;
+        this.options = options;
+        this.settings = settings;
+        this.parserOptions = parserOptions;
+        this.parserPath = parserPath;
+        this.meta = meta;
+
+        // create a separate copy and freeze it (it's not nice to freeze other people's objects)
+        this.parserServices = Object.freeze(Object.assign({}, parserServices));
+
+        // private.
+        this.eslint = eslint;
+        this.severity = severity;
+
+        Object.freeze(this);
+    }
+
+    /**
+     * Passthrough to eslint.getSourceCode().
+     * @returns {SourceCode} The SourceCode object for the code.
+     */
+    getSourceCode() {
+        return this.eslint.getSourceCode();
+    }
+
+    /**
+     * Passthrough to eslint.report() that automatically assigns the rule ID and severity.
+     * @param {ASTNode|MessageDescriptor} nodeOrDescriptor The AST node related to the message or a message
+     *      descriptor.
+     * @param {Object=} location The location of the error.
+     * @param {string} message The message to display to the user.
+     * @param {Object} opts Optional template data which produces a formatted message
+     *     with symbols being replaced by this object's values.
+     * @returns {void}
+     */
+    report(nodeOrDescriptor, location, message, opts) {
+
+        // check to see if it's a new style call
+        if (arguments.length === 1) {
+            const descriptor = nodeOrDescriptor;
+            let fix = null;
+
+            // if there's a fix specified, get it
+            if (typeof descriptor.fix === "function") {
+                fix = descriptor.fix(ruleFixer);
+            }
+
+            this.eslint.report(
+                this.id,
+                this.severity,
+                descriptor.node,
+                descriptor.loc || descriptor.node.loc.start,
+                descriptor.message,
+                descriptor.data,
+                fix,
+                this.meta
+            );
+
+            return;
+        }
+
+        // old style call
+        this.eslint.report(
+            this.id,
+            this.severity,
+            nodeOrDescriptor,
+            location,
+            message,
+            opts,
+            this.meta
+        );
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1873,7 +2935,24 @@
         trailing: trailingComments
     };
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+       return true;
+   }
+
+   // Checks `@this` in its leading comments for callbacks,
+   // because callbacks don't have its JSDoc comment.
+   // e.g.
+   //     sinon.test(/* @this sinon.Sandbox */function() { this.spy(); });
+   return sourceCode.<span class="apidocCodeKeywordSpan">getComments</span>(node).leading.some(comment =&gt; thisTagPattern.test
+(comment.value));
+}
+
+/**
+* Determines if a node is surrounded by parentheses.
+* @param {SourceCode} sourceCode The ESLint source code object
+* @param {ASTNode} node The node to be checked.
+* @returns {boolean} True if the node is parenthesised.
+...</pre></li>
     </ul>
 
 
@@ -1969,7 +3048,23 @@ parent.type !== "Property") {
             return null;
     }
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+/**
+ * Checks whether or not a node has a `@this` tag in its comments.
+ * @param {ASTNode} node - A node to check.
+ * @param {SourceCode} sourceCode - A SourceCode instance to get comments.
+ * @returns {boolean} Whether or not the node has a `@this` tag in its comments.
+ */
+function hasJSDocThisTag(node, sourceCode) {
+const jsdocComment = sourceCode.<span class="apidocCodeKeywordSpan">getJSDocComment</span>(node);
+
+if (jsdocComment &amp;&amp; thisTagPattern.test(jsdocComment.value)) {
+    return true;
+}
+
+// Checks `@this` in its leading comments for callbacks,
+// because callbacks don't have its JSDoc comment.
+...</pre></li>
     </ul>
 
 
@@ -2081,7 +3176,24 @@ parent.type !== "Property") {
 
 
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    return {
+        start: Object.assign({}, start),
+        end: Object.assign({}, end)
+    };
+},
+
+/**
+* Gets the parenthesized text of a node. This is similar to sourceCode.<span class="apidocCodeKeywordSpan">getText</span>(node),
+but it also includes any parentheses
+* surrounding the node.
+* @param {SourceCode} sourceCode The source code object
+* @param {ASTNode} node An expression node
+* @returns {string} The text representing the node, with all surrounding parentheses included
+*/
+getParenthesisedText(sourceCode, node) {
+    let leftToken = sourceCode.getFirstToken(node);
+...</pre></li>
     </ul>
 
 
@@ -2100,6 +3212,1439 @@ parent.type !== "Property") {
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint.api" id="apidoc.module.eslint.api">module eslint.api</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.api.CLIEngine" id="apidoc.element.eslint.api.CLIEngine">
+        function <span class="apidocSignatureSpan">eslint.api.</span>CLIEngine
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CLIEngine(options) {
+
+    options = Object.assign(
+        Object.create(null),
+        defaultOptions,
+        { cwd: process.cwd() },
+        options
+    );
+
+<span class="apidocCodeCommentSpan">    /**
+     * Stored options for this instance
+     * @type {Object}
+     */
+</span>    this.options = options;
+
+    const cacheFile = getCacheFile(this.options.cacheLocation || this.options.cacheFile, this.options.cwd);
+
+    /**
+     * Cache used to avoid operating on files that haven't changed since the
+     * last successful execution (e.g., file passed linting with no errors and
+     * no warnings).
+     * @type {Object}
+     */
+    this._fileCache = fileEntryCache.create(cacheFile);
+
+    // load in additional rules
+    if (this.options.rulePaths) {
+        const cwd = this.options.cwd;
+
+        this.options.rulePaths.forEach(rulesdir =&gt; {
+            debug(`Loading rules from ${rulesdir}`);
+            rules.load(rulesdir, cwd);
+        });
+    }
+
+    Object.keys(this.options.rules || {}).forEach(name =&gt; {
+        validator.validateRuleOptions(name, this.options.rules[name], "CLI");
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.api.RuleTester" id="apidoc.element.eslint.api.RuleTester">
+        function <span class="apidocSignatureSpan">eslint.api.</span>RuleTester
+        <span class="apidocSignatureSpan">(testerConfig)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function RuleTester(testerConfig) {
+
+<span class="apidocCodeCommentSpan">    /**
+     * The configuration to use for this tester. Combination of the tester
+     * configuration and the default configuration.
+     * @type {Object}
+     */
+</span>    this.testerConfig = lodash.merge(
+
+        // we have to clone because merge uses the first argument for recipient
+        lodash.cloneDeep(defaultConfig),
+        testerConfig
+    );
+
+    /**
+     * Rule definitions to define before tests.
+     * @type {Object}
+     */
+    this.rules = {};
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.api.SourceCode" id="apidoc.element.eslint.api.SourceCode">
+        function <span class="apidocSignatureSpan">eslint.api.</span>SourceCode
+        <span class="apidocSignatureSpan">(text, ast)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function SourceCode(text, ast) {
+    validate(ast);
+
+<span class="apidocCodeCommentSpan">    /**
+     * The flag to indicate that the source code has Unicode BOM.
+     * @type boolean
+     */
+</span>    this.hasBOM = (text.charCodeAt(0) === 0xFEFF);
+
+    /**
+     * The original text source code.
+     * BOM was stripped from this text.
+     * @type string
+     */
+    this.text = (this.hasBOM ? text.slice(1) : text);
+
+    /**
+     * The parsed AST for the source code.
+     * @type ASTNode
+     */
+    this.ast = ast;
+
+    /**
+     * The source code split into lines according to ECMA-262 specification.
+     * This is done to avoid each rule needing to do so separately.
+     * @type string[]
+     */
+    this.lines = [];
+    this.lineStartIndices = [0];
+
+    const lineEndingPattern = astUtils.createGlobalLinebreakMatcher();
+    let match;
+
+    /*
+     * Previously, this was implemented using a regex that
+     * matched a sequence of non-linebreak characters followed by a
+     * linebreak, then adding the lengths of the matches. However,
+     * this caused a catastrophic backtracking issue when the end
+     * of a file contained a large number of non-newline characters.
+     * To avoid this, the current implementation just matches newlines
+     * and uses match.index to get the correct line start indices.
+     */
+    while ((match = lineEndingPattern.exec(this.text))) {
+        this.lines.push(this.text.slice(this.lineStartIndices[this.lineStartIndices.length - 1], match.index));
+        this.lineStartIndices.push(match.index + match[0].length);
+    }
+    this.lines.push(this.text.slice(this.lineStartIndices[this.lineStartIndices.length - 1]));
+
+    this.tokensAndComments = sortedMerge(ast.tokens, ast.comments);
+
+    // create token store methods
+    const tokenStore = new TokenStore(ast.tokens, ast.comments);
+
+    for (const methodName of TokenStore.PUBLIC_METHODS) {
+        this[methodName] = tokenStore[methodName].bind(tokenStore);
+    }
+
+    // don't allow modification of this object
+    Object.freeze(this);
+    Object.freeze(this.lines);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint.ast_utils" id="apidoc.module.eslint.ast_utils">module eslint.ast_utils</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.couldBeError" id="apidoc.element.eslint.ast_utils.couldBeError">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>couldBeError
+        <span class="apidocSignatureSpan">(node)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">couldBeError(node) {
+    switch (node.type) {
+        case "Identifier":
+        case "CallExpression":
+        case "NewExpression":
+        case "MemberExpression":
+        case "TaggedTemplateExpression":
+        case "YieldExpression":
+        case "AwaitExpression":
+            return true; // possibly an error object.
+
+        case "AssignmentExpression":
+            return module.exports.couldBeError(node.right);
+
+        case "SequenceExpression": {
+            const exprs = node.expressions;
+
+            return exprs.length !== 0 &amp;&amp; module.exports.couldBeError(exprs[exprs.length - 1]);
+        }
+
+        case "LogicalExpression":
+            return module.exports.couldBeError(node.left) || module.exports.couldBeError(node.right);
+
+        case "ConditionalExpression":
+            return module.exports.couldBeError(node.consequent) || module.exports.couldBeError(node.alternate);
+
+        default:
+            return false;
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+case "MemberExpression":
+case "TaggedTemplateExpression":
+case "YieldExpression":
+case "AwaitExpression":
+    return true; // possibly an error object.
+
+case "AssignmentExpression":
+    return module.exports.<span class="apidocCodeKeywordSpan">couldBeError</span>(node.right);
+
+case "SequenceExpression": {
+    const exprs = node.expressions;
+
+    return exprs.length !== 0 &amp;&amp; module.exports.couldBeError(exprs[exprs.length - 1]);
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.createGlobalLinebreakMatcher" id="apidoc.element.eslint.ast_utils.createGlobalLinebreakMatcher">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>createGlobalLinebreakMatcher
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function createGlobalLinebreakMatcher() {
+    return new RegExp(LINEBREAK_MATCHER.source, "g");
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.getDirectivePrologue" id="apidoc.element.eslint.ast_utils.getDirectivePrologue">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>getDirectivePrologue
+        <span class="apidocSignatureSpan">(node)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getDirectivePrologue(node) {
+    const directives = [];
+
+    // Directive prologues only occur at the top of files or functions.
+    if (
+        node.type === "Program" ||
+        node.type === "FunctionDeclaration" ||
+        node.type === "FunctionExpression" ||
+
+        // Do not check arrow functions with implicit return.
+        // `() =&gt; "use strict";` returns the string `"use strict"`.
+        (node.type === "ArrowFunctionExpression" &amp;&amp; node.body.type === "BlockStatement")
+    ) {
+        const statements = node.type === "Program" ? node.body : node.body.body;
+
+        for (const statement of statements) {
+            if (
+                statement.type === "ExpressionStatement" &amp;&amp;
+                statement.expression.type === "Literal"
+            ) {
+                directives.push(statement);
+            } else {
+                break;
+            }
+        }
+    }
+
+    return directives;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.getFunctionHeadLoc" id="apidoc.element.eslint.ast_utils.getFunctionHeadLoc">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>getFunctionHeadLoc
+        <span class="apidocSignatureSpan">(node, sourceCode)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getFunctionHeadLoc(node, sourceCode) {
+    const parent = node.parent;
+    let start = null;
+    let end = null;
+
+    if (node.type === "ArrowFunctionExpression") {
+        const arrowToken = sourceCode.getTokenBefore(node.body, isArrowToken);
+
+        start = arrowToken.loc.start;
+        end = arrowToken.loc.end;
+    } else if (parent.type === "Property" || parent.type === "MethodDefinition") {
+        start = parent.loc.start;
+        end = getOpeningParenOfParams(node, sourceCode).loc.start;
+    } else {
+        start = node.loc.start;
+        end = getOpeningParenOfParams(node, sourceCode).loc.start;
+    }
+
+    return {
+        start: Object.assign({}, start),
+        end: Object.assign({}, end)
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.getFunctionNameWithKind" id="apidoc.element.eslint.ast_utils.getFunctionNameWithKind">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>getFunctionNameWithKind
+        <span class="apidocSignatureSpan">(node)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getFunctionNameWithKind(node) {
+    const parent = node.parent;
+    const tokens = [];
+
+    if (parent.type === "MethodDefinition" &amp;&amp; parent.static) {
+        tokens.push("static");
+    }
+    if (node.async) {
+        tokens.push("async");
+    }
+    if (node.generator) {
+        tokens.push("generator");
+    }
+
+    if (node.type === "ArrowFunctionExpression") {
+        tokens.push("arrow", "function");
+    } else if (parent.type === "Property" || parent.type === "MethodDefinition") {
+        if (parent.kind === "constructor") {
+            return "constructor";
+        } else if (parent.kind === "get") {
+            tokens.push("getter");
+        } else if (parent.kind === "set") {
+            tokens.push("setter");
+        } else {
+            tokens.push("method");
+        }
+    } else {
+        tokens.push("function");
+    }
+
+    if (node.id) {
+        tokens.push(`'${node.id.name}'`);
+    } else {
+        const name = module.exports.getStaticPropertyName(parent);
+
+        if (name) {
+            tokens.push(`'${name}'`);
+        }
+    }
+
+    return tokens.join(" ");
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.getLabel" id="apidoc.element.eslint.ast_utils.getLabel">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>getLabel
+        <span class="apidocSignatureSpan">(node)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getLabel(node) {
+    if (node.parent.type === "LabeledStatement") {
+        return node.parent.label.name;
+    }
+    return null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.getModifyingReferences" id="apidoc.element.eslint.ast_utils.getModifyingReferences">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>getModifyingReferences
+        <span class="apidocSignatureSpan">(references)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getModifyingReferences(references) {
+    return references.filter(isModifyingReference);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.getParenthesisedText" id="apidoc.element.eslint.ast_utils.getParenthesisedText">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>getParenthesisedText
+        <span class="apidocSignatureSpan">(sourceCode, node)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getParenthesisedText(sourceCode, node) {
+    let leftToken = sourceCode.getFirstToken(node);
+    let rightToken = sourceCode.getLastToken(node);
+
+    while (
+        sourceCode.getTokenBefore(leftToken) &amp;&amp;
+        sourceCode.getTokenBefore(leftToken).type === "Punctuator" &amp;&amp;
+        sourceCode.getTokenBefore(leftToken).value === "(" &amp;&amp;
+        sourceCode.getTokenAfter(rightToken) &amp;&amp;
+        sourceCode.getTokenAfter(rightToken).type === "Punctuator" &amp;&amp;
+        sourceCode.getTokenAfter(rightToken).value === ")"
+    ) {
+        leftToken = sourceCode.getTokenBefore(leftToken);
+        rightToken = sourceCode.getTokenAfter(rightToken);
+    }
+
+    return sourceCode.getText().slice(leftToken.range[0], rightToken.range[1]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.getPrecedence" id="apidoc.element.eslint.ast_utils.getPrecedence">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>getPrecedence
+        <span class="apidocSignatureSpan">(node)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getPrecedence(node) {
+    switch (node.type) {
+        case "SequenceExpression":
+            return 0;
+
+        case "AssignmentExpression":
+        case "ArrowFunctionExpression":
+        case "YieldExpression":
+            return 1;
+
+        case "ConditionalExpression":
+            return 3;
+
+        case "LogicalExpression":
+            switch (node.operator) {
+                case "||":
+                    return 4;
+                case "&amp;&amp;":
+                    return 5;
+
+                // no default
+            }
+
+<span class="apidocCodeCommentSpan">            /* falls through */
+</span>
+        case "BinaryExpression":
+
+            switch (node.operator) {
+                case "|":
+                    return 6;
+                case "^":
+                    return 7;
+                case "&amp;":
+                    return 8;
+                case "==":
+                case "!=":
+                case "===":
+                case "!==":
+                    return 9;
+                case "&lt;":
+                case "&lt;=":
+                case "&gt;":
+                case "&gt;=":
+                case "in":
+                case "instanceof":
+                    return 10;
+                case "&lt;&lt;":
+                case "&gt;&gt;":
+                case "&gt;&gt;&gt;":
+                    return 11;
+                case "+":
+                case "-":
+                    return 12;
+                case "*":
+                case "/":
+                case "%":
+                    return 13;
+                case "**":
+                    return 15;
+
+                // no default
+            }
+
+            /* falls through */
+
+        case "UnaryExpression":
+        case "AwaitExpression":
+            return 16;
+
+        case "UpdateExpression":
+            return 17;
+
+        case "CallExpression":
+
+            // IIFE is allowed to have parens in any position (#655)
+            if (node.callee.type === "FunctionExpression") {
+                return -1;
+            }
+            return 18;
+
+        case "NewExpression":
+            return 19;
+
+        // no default
+    }
+    return 20;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.getStaticPropertyName" id="apidoc.element.eslint.ast_utils.getStaticPropertyName">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>getStaticPropertyName
+        <span class="apidocSignatureSpan">(node)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getStaticPropertyName(node) {
+    let prop;
+
+    switch (node &amp;&amp; node.type) {
+        case "Property":
+        case "MethodDefinition":
+            prop = node.key;
+            break;
+
+        case "MemberExpression":
+            prop = node.property;
+            break;
+
+        // no default
+    }
+
+    switch (prop &amp;&amp; prop.type) {
+        case "Literal":
+            return String(prop.value);
+
+        case "TemplateLiteral":
+            if (prop.expressions.length === 0 &amp;&amp; prop.quasis.length === 1) {
+                return prop.quasis[0].value.cooked;
+            }
+            break;
+
+        case "Identifier":
+            if (!node.computed) {
+                return prop.name;
+            }
+            break;
+
+        // no default
+    }
+
+    return null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+} else {
+    tokens.push("function");
+}
+
+if (node.id) {
+    tokens.push(`'${node.id.name}'`);
+} else {
+    const name = module.exports.<span class="apidocCodeKeywordSpan">getStaticPropertyName</span>(parent);
+
+    if (name) {
+        tokens.push(`'${name}'`);
+    }
+}
+
+return tokens.join(" ");
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.getTrailingStatement" id="apidoc.element.eslint.ast_utils.getTrailingStatement">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>getTrailingStatement
+        <span class="apidocSignatureSpan">(node)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function trailingStatement(node) {
+    switch (node.type) {
+    case 'IfStatement':
+        if (node.alternate != null) {
+            return node.alternate;
+        }
+        return node.consequent;
+
+    case 'LabeledStatement':
+    case 'ForStatement':
+    case 'ForInStatement':
+    case 'WhileStatement':
+    case 'WithStatement':
+        return node.body;
+    }
+    return null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.getUpperFunction" id="apidoc.element.eslint.ast_utils.getUpperFunction">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>getUpperFunction
+        <span class="apidocSignatureSpan">(node)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getUpperFunction(node) {
+    while (node) {
+        if (anyFunctionPattern.test(node.type)) {
+            return node;
+        }
+        node = node.parent;
+    }
+    return null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.getVariableByName" id="apidoc.element.eslint.ast_utils.getVariableByName">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>getVariableByName
+        <span class="apidocSignatureSpan">(initScope, name)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getVariableByName(initScope, name) {
+    let scope = initScope;
+
+    while (scope) {
+        const variable = scope.set.get(name);
+
+        if (variable) {
+            return variable;
+        }
+
+        scope = scope.upper;
+    }
+
+    return null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.isArrayFromMethod" id="apidoc.element.eslint.ast_utils.isArrayFromMethod">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isArrayFromMethod
+        <span class="apidocSignatureSpan">(node)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isArrayFromMethod(node) {
+    return (
+        node.type === "MemberExpression" &amp;&amp;
+        node.object.type === "Identifier" &amp;&amp;
+        arrayOrTypedArrayPattern.test(node.object.name) &amp;&amp;
+        node.property.type === "Identifier" &amp;&amp;
+        node.property.name === "from" &amp;&amp;
+        node.computed === false
+    );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.isArrowToken" id="apidoc.element.eslint.ast_utils.isArrowToken">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isArrowToken
+        <span class="apidocSignatureSpan">(token)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isArrowToken(token) {
+    return token.value === "=&gt;" &amp;&amp; token.type === "Punctuator";
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.isBreakableStatement" id="apidoc.element.eslint.ast_utils.isBreakableStatement">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isBreakableStatement
+        <span class="apidocSignatureSpan">(node)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isBreakableStatement(node) {
+    return breakableTypePattern.test(node.type);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.isCallee" id="apidoc.element.eslint.ast_utils.isCallee">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isCallee
+        <span class="apidocSignatureSpan">(node)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isCallee(node) {
+    return node.parent.type === "CallExpression" &amp;&amp; node.parent.callee === node;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.isClosingBraceToken" id="apidoc.element.eslint.ast_utils.isClosingBraceToken">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isClosingBraceToken
+        <span class="apidocSignatureSpan">(token)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isClosingBraceToken(token) {
+    return token.value === "}" &amp;&amp; token.type === "Punctuator";
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.isClosingBracketToken" id="apidoc.element.eslint.ast_utils.isClosingBracketToken">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isClosingBracketToken
+        <span class="apidocSignatureSpan">(token)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isClosingBracketToken(token) {
+    return token.value === "]" &amp;&amp; token.type === "Punctuator";
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.isClosingParenToken" id="apidoc.element.eslint.ast_utils.isClosingParenToken">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isClosingParenToken
+        <span class="apidocSignatureSpan">(token)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isClosingParenToken(token) {
+    return token.value === ")" &amp;&amp; token.type === "Punctuator";
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.isColonToken" id="apidoc.element.eslint.ast_utils.isColonToken">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isColonToken
+        <span class="apidocSignatureSpan">(token)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isColonToken(token) {
+    return token.value === ":" &amp;&amp; token.type === "Punctuator";
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.isCommaToken" id="apidoc.element.eslint.ast_utils.isCommaToken">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isCommaToken
+        <span class="apidocSignatureSpan">(token)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isCommaToken(token) {
+    return token.value === "," &amp;&amp; token.type === "Punctuator";
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.isCommentToken" id="apidoc.element.eslint.ast_utils.isCommentToken">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isCommentToken
+        <span class="apidocSignatureSpan">(token)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isCommentToken(token) {
+    return token.type === "Line" || token.type === "Block" || token.type === "Shebang";
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.isDecimalInteger" id="apidoc.element.eslint.ast_utils.isDecimalInteger">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isDecimalInteger
+        <span class="apidocSignatureSpan">(node)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isDecimalInteger(node) {
+    return node.type === "Literal" &amp;&amp; typeof node.value === "number" &amp;&amp; /^(0|[1-9]\d*)$/.test(node.raw);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.isDefaultThisBinding" id="apidoc.element.eslint.ast_utils.isDefaultThisBinding">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isDefaultThisBinding
+        <span class="apidocSignatureSpan">(node, sourceCode)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isDefaultThisBinding(node, sourceCode) {
+    if (isES5Constructor(node) || hasJSDocThisTag(node, sourceCode)) {
+        return false;
+    }
+    const isAnonymous = node.id === null;
+
+    while (node) {
+        const parent = node.parent;
+
+        switch (parent.type) {
+
+<span class="apidocCodeCommentSpan">            /*
+             * Looks up the destination.
+             * e.g., obj.foo = nativeFoo || function foo() { ... };
+             */
+</span>            case "LogicalExpression":
+            case "ConditionalExpression":
+                node = parent;
+                break;
+
+            // If the upper function is IIFE, checks the destination of the return value.
+            // e.g.
+            //   obj.foo = (function() {
+            //     // setup...
+            //     return function foo() { ... };
+            //   })();
+            case "ReturnStatement": {
+                const func = getUpperFunction(parent);
+
+                if (func === null || !isCallee(func)) {
+                    return true;
+                }
+                node = func.parent;
+                break;
+            }
+
+            // e.g.
+            //   var obj = { foo() { ... } };
+            //   var obj = { foo: function() { ... } };
+            //   class A { constructor() { ... } }
+            //   class A { foo() { ... } }
+            //   class A { get foo() { ... } }
+            //   class A { set foo() { ... } }
+            //   class A { static foo() { ... } }
+            case "Property":
+            case "MethodDefinition":
+                return parent.value !== node;
+
+            // e.g.
+            //   obj.foo = function foo() { ... };
+            //   Foo = function() { ... };
+            //   [obj.foo = function foo() { ... }] = a;
+            //   [Foo = function() { ... }] = a;
+            case "AssignmentExpression":
+            case "AssignmentPattern":
+                if (parent.right === node) {
+                    if (parent.left.type === "MemberExpression") {
+                        return false;
+                    }
+                    if (isAnonymous &amp;&amp;
+                        parent.left.type === "Identifier" &amp;&amp;
+                        startsWithUpperCase(parent.left.name)
+                    ) {
+                        return false;
+                    }
+                }
+                return true;
+
+            // e.g.
+            //   var Foo = function() { ... };
+            case "VariableDeclarator":
+                return !(
+                    isAnonymous &amp;&amp;
+                    parent.init === node &amp;&amp;
+                    parent.id.type === "Identifier" &amp;&amp;
+                    startsWithUpperCase(parent.id.name)
+                );
+
+            // e.g.
+            //   var foo = function foo() { ... }.bind(obj);
+            //   (function foo() { ... }).call(obj);
+            //   (function foo() { ... }).apply(obj, []);
+            case "MemberExpression":
+                return (
+                    parent.object !== node ||
+                    parent.property.type !== "Identifier" ||
+                    !bindOrCallOrApplyPattern.test(parent.property.name) ||
+                    !isCallee(parent) ||
+                    parent.parent.arguments.length === 0 ||
+                    isNullOrUndefined(parent.parent.arguments[0])
+                );
+
+            // e.g.
+            //   Reflect.apply(function() {}, obj, []);
+            //   Array.from([], function() {}, obj);
+            //   list.forEach(function() {}, obj);
+            case "CallExpression":
+                if (isReflectApply(parent.callee)) {
+                    return (
+                        parent.arguments.length !== 3 ||
+                        parent.arguments[0] !== node ||
+                        isNullOrUndefined(parent.arguments[1])
+                    );
+                }
+                if (isArrayFromMethod(parent.callee)) {
+                    return (
+                        parent.arguments.length !== 3 ||
+                        parent.arguments[1] !== node ||
+                        isNullOrUndefined(parent.arguments[2])
+                    );
+                } ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.isDirectiveComment" id="apidoc.element.eslint.ast_utils.isDirectiveComment">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isDirectiveComment
+        <span class="apidocSignatureSpan">(node)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isDirectiveComment(node) {
+    const comment = node.value.trim();
+
+    return (
+        node.type === "Line" &amp;&amp; comment.indexOf("eslint-") === 0 ||
+        node.type === "Block" &amp;&amp; (
+            comment.indexOf("global ") === 0 ||
+            comment.indexOf("eslint ") === 0 ||
+            comment.indexOf("eslint-") === 0
+        )
+    );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.isES5Constructor" id="apidoc.element.eslint.ast_utils.isES5Constructor">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isES5Constructor
+        <span class="apidocSignatureSpan">(node)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isES5Constructor(node) {
+    return (node.id &amp;&amp; startsWithUpperCase(node.id.name));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.isEmptyBlock" id="apidoc.element.eslint.ast_utils.isEmptyBlock">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isEmptyBlock
+        <span class="apidocSignatureSpan">(node)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isEmptyBlock(node) {
+    return Boolean(node &amp;&amp; node.type === "BlockStatement" &amp;&amp; node.body.length === 0);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+/**
+ * Checks whether the given node is an empty function node or not.
+ *
+ * @param {ASTNode|null} node - The node to check.
+ * @returns {boolean} `true` if the node is an empty function.
+ */
+isEmptyFunction(node) {
+    return isFunction(node) &amp;&amp; module.exports.<span class="apidocCodeKeywordSpan">isEmptyBlock</span>(node.body);
+},
+
+/**
+ * Gets the property name of a given node.
+ * The node can be a MemberExpression, a Property, or a MethodDefinition.
+ *
+ * If the name is dynamic, this returns `null`.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.isEmptyFunction" id="apidoc.element.eslint.ast_utils.isEmptyFunction">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isEmptyFunction
+        <span class="apidocSignatureSpan">(node)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isEmptyFunction(node) {
+    return isFunction(node) &amp;&amp; module.exports.isEmptyBlock(node.body);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.isFunction" id="apidoc.element.eslint.ast_utils.isFunction">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isFunction
+        <span class="apidocSignatureSpan">(node)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isFunction(node) {
+    return Boolean(node &amp;&amp; anyFunctionPattern.test(node.type));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.isInLoop" id="apidoc.element.eslint.ast_utils.isInLoop">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isInLoop
+        <span class="apidocSignatureSpan">(node)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isInLoop(node) {
+    while (node &amp;&amp; !isFunction(node)) {
+        if (isLoop(node)) {
+            return true;
+        }
+
+        node = node.parent;
+    }
+
+    return false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.isKeywordToken" id="apidoc.element.eslint.ast_utils.isKeywordToken">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isKeywordToken
+        <span class="apidocSignatureSpan">(token)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isKeywordToken(token) {
+    return token.type === "Keyword";
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.isLoop" id="apidoc.element.eslint.ast_utils.isLoop">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isLoop
+        <span class="apidocSignatureSpan">(node)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isLoop(node) {
+    return Boolean(node &amp;&amp; anyLoopPattern.test(node.type));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.isNotClosingBraceToken" id="apidoc.element.eslint.ast_utils.isNotClosingBraceToken">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isNotClosingBraceToken
+        <span class="apidocSignatureSpan">(token)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">token =&gt; !f(token)</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.isNotClosingBracketToken" id="apidoc.element.eslint.ast_utils.isNotClosingBracketToken">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isNotClosingBracketToken
+        <span class="apidocSignatureSpan">(token)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">token =&gt; !f(token)</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.isNotClosingParenToken" id="apidoc.element.eslint.ast_utils.isNotClosingParenToken">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isNotClosingParenToken
+        <span class="apidocSignatureSpan">(token)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">token =&gt; !f(token)</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.isNotColonToken" id="apidoc.element.eslint.ast_utils.isNotColonToken">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isNotColonToken
+        <span class="apidocSignatureSpan">(token)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">token =&gt; !f(token)</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.isNotCommaToken" id="apidoc.element.eslint.ast_utils.isNotCommaToken">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isNotCommaToken
+        <span class="apidocSignatureSpan">(token)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">token =&gt; !f(token)</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.isNotOpeningBraceToken" id="apidoc.element.eslint.ast_utils.isNotOpeningBraceToken">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isNotOpeningBraceToken
+        <span class="apidocSignatureSpan">(token)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">token =&gt; !f(token)</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.isNotOpeningBracketToken" id="apidoc.element.eslint.ast_utils.isNotOpeningBracketToken">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isNotOpeningBracketToken
+        <span class="apidocSignatureSpan">(token)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">token =&gt; !f(token)</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.isNotOpeningParenToken" id="apidoc.element.eslint.ast_utils.isNotOpeningParenToken">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isNotOpeningParenToken
+        <span class="apidocSignatureSpan">(token)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">token =&gt; !f(token)</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.isNotSemicolonToken" id="apidoc.element.eslint.ast_utils.isNotSemicolonToken">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isNotSemicolonToken
+        <span class="apidocSignatureSpan">(token)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">token =&gt; !f(token)</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.isNullLiteral" id="apidoc.element.eslint.ast_utils.isNullLiteral">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isNullLiteral
+        <span class="apidocSignatureSpan">(node)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isNullLiteral(node) {
+
+<span class="apidocCodeCommentSpan">    /*
+     * Checking `node.value === null` does not guarantee that a literal is a null literal.
+     * When parsing values that cannot be represented in the current environment (e.g. unicode
+     * regexes in Node 4), `node.value` is set to `null` because it wouldn't be possible to
+     * set `node.value` to a unicode regex. To make sure a literal is actually `null`, check
+     * `node.regex` instead. Also see: https://github.com/eslint/eslint/issues/8020
+     */
+</span>    return node.type === "Literal" &amp;&amp; node.value === null &amp;&amp; !node.regex;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+* Checks whether or not a node is `null` or `undefined`.
+* @param {ASTNode} node - A node to check.
+* @returns {boolean} Whether or not the node is a `null` or `undefined`.
+* @public
+*/
+function isNullOrUndefined(node) {
+   return (
+       module.exports.<span class="apidocCodeKeywordSpan">isNullLiteral</span>(node) ||
+       (node.type === "Identifier" &amp;&amp; node.name === "undefined") ||
+       (node.type === "UnaryExpression" &amp;&amp; node.operator === "void")
+   );
+}
+
+/**
+* Checks whether or not a node is callee.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.isNullOrUndefined" id="apidoc.element.eslint.ast_utils.isNullOrUndefined">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isNullOrUndefined
+        <span class="apidocSignatureSpan">(node)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isNullOrUndefined(node) {
+    return (
+        module.exports.isNullLiteral(node) ||
+        (node.type === "Identifier" &amp;&amp; node.name === "undefined") ||
+        (node.type === "UnaryExpression" &amp;&amp; node.operator === "void")
+    );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.isOpeningBraceToken" id="apidoc.element.eslint.ast_utils.isOpeningBraceToken">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isOpeningBraceToken
+        <span class="apidocSignatureSpan">(token)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isOpeningBraceToken(token) {
+    return token.value === "{" &amp;&amp; token.type === "Punctuator";
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.isOpeningBracketToken" id="apidoc.element.eslint.ast_utils.isOpeningBracketToken">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isOpeningBracketToken
+        <span class="apidocSignatureSpan">(token)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isOpeningBracketToken(token) {
+    return token.value === "[" &amp;&amp; token.type === "Punctuator";
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.isOpeningParenToken" id="apidoc.element.eslint.ast_utils.isOpeningParenToken">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isOpeningParenToken
+        <span class="apidocSignatureSpan">(token)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isOpeningParenToken(token) {
+    return token.value === "(" &amp;&amp; token.type === "Punctuator";
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.isParenthesised" id="apidoc.element.eslint.ast_utils.isParenthesised">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isParenthesised
+        <span class="apidocSignatureSpan">(sourceCode, node)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isParenthesised(sourceCode, node) {
+    const previousToken = sourceCode.getTokenBefore(node),
+        nextToken = sourceCode.getTokenAfter(node);
+
+    return Boolean(previousToken &amp;&amp; nextToken) &amp;&amp;
+        previousToken.value === "(" &amp;&amp; previousToken.range[1] &lt;= node.range[0] &amp;&amp;
+        nextToken.value === ")" &amp;&amp; nextToken.range[0] &gt;= node.range[1];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.isSemicolonToken" id="apidoc.element.eslint.ast_utils.isSemicolonToken">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isSemicolonToken
+        <span class="apidocSignatureSpan">(token)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isSemicolonToken(token) {
+    return token.value === ";" &amp;&amp; token.type === "Punctuator";
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.isStringLiteral" id="apidoc.element.eslint.ast_utils.isStringLiteral">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isStringLiteral
+        <span class="apidocSignatureSpan">(node)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isStringLiteral(node) {
+    return (
+        (node.type === "Literal" &amp;&amp; typeof node.value === "string") ||
+        node.type === "TemplateLiteral"
+    );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.isSurroundedBy" id="apidoc.element.eslint.ast_utils.isSurroundedBy">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isSurroundedBy
+        <span class="apidocSignatureSpan">(val, character)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isSurroundedBy(val, character) {
+    return val[0] === character &amp;&amp; val[val.length - 1] === character;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.ast_utils.isTokenOnSameLine" id="apidoc.element.eslint.ast_utils.isTokenOnSameLine">
+        function <span class="apidocSignatureSpan">eslint.ast_utils.</span>isTokenOnSameLine
+        <span class="apidocSignatureSpan">(left, right)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isTokenOnSameLine(left, right) {
+    return left.loc.end.line === right.loc.start.line;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
 
 
 </div>
@@ -2201,7 +4746,24 @@ parent.type !== "Property") {
     }
     return null;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+       return true;
+   }
+
+   // Checks `@this` in its leading comments for callbacks,
+   // because callbacks don't have its JSDoc comment.
+   // e.g.
+   //     sinon.test(/* @this sinon.Sandbox */function() { this.spy(); });
+   return sourceCode.<span class="apidocCodeKeywordSpan">getComments</span>(node).leading.some(comment =&gt; thisTagPattern.test
+(comment.value));
+}
+
+/**
+* Determines if a node is surrounded by parentheses.
+* @param {SourceCode} sourceCode The ESLint source code object
+* @param {ASTNode} node The node to be checked.
+* @returns {boolean} True if the node is parenthesised.
+...</pre></li>
     </ul>
 
 
@@ -2253,7 +4815,23 @@ parent.type !== "Property") {
     }
     return null;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+* @param {ASTNode} node - The function node to get.
+* @param {SourceCode} sourceCode - The source code object to get tokens.
+* @returns {Token} `(` token.
+*/
+function getOpeningParenOfParams(node, sourceCode) {
+   return node.id
+       ? sourceCode.getTokenAfter(node.id, isOpeningParenToken)
+       : sourceCode.<span class="apidocCodeKeywordSpan">getFirstToken</span>(node, isOpeningParenToken);
+}
+
+/**
+* Creates a version of the LINEBREAK_MATCHER regex with the global flag.
+* Global regexes are mutable, so this needs to be a function instead of a constant.
+* @returns {RegExp} A global regular expression that matches line terminators
+*/
+...</pre></li>
     </ul>
 
 
@@ -2289,7 +4867,23 @@ parent.type !== "Property") {
     }
     return null;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+/**
+ * Checks whether or not a node has a `@this` tag in its comments.
+ * @param {ASTNode} node - A node to check.
+ * @param {SourceCode} sourceCode - A SourceCode instance to get comments.
+ * @returns {boolean} Whether or not the node has a `@this` tag in its comments.
+ */
+function hasJSDocThisTag(node, sourceCode) {
+const jsdocComment = sourceCode.<span class="apidocCodeKeywordSpan">getJSDocComment</span>(node);
+
+if (jsdocComment &amp;&amp; thisTagPattern.test(jsdocComment.value)) {
+    return true;
+}
+
+// Checks `@this` in its leading comments for callbacks,
+// because callbacks don't have its JSDoc comment.
+...</pre></li>
     </ul>
 
 
@@ -2307,7 +4901,23 @@ parent.type !== "Property") {
     }
     return null;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    * surrounding the node.
+    * @param {SourceCode} sourceCode The source code object
+    * @param {ASTNode} node An expression node
+    * @returns {string} The text representing the node, with all surrounding parentheses included
+    */
+    getParenthesisedText(sourceCode, node) {
+let leftToken = sourceCode.getFirstToken(node);
+let rightToken = sourceCode.<span class="apidocCodeKeywordSpan">getLastToken</span>(node);
+
+while (
+    sourceCode.getTokenBefore(leftToken) &amp;&amp;
+    sourceCode.getTokenBefore(leftToken).type === "Punctuator" &amp;&amp;
+    sourceCode.getTokenBefore(leftToken).value === "(" &amp;&amp;
+    sourceCode.getTokenAfter(rightToken) &amp;&amp;
+    sourceCode.getTokenAfter(rightToken).type === "Punctuator" &amp;&amp;
+...</pre></li>
     </ul>
 
 
@@ -2443,7 +5053,23 @@ parent.type !== "Property") {
     <li>description and source-code<pre class="apidocCodePre">getSourceCode = function () {
     return sourceCode;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    this.eslint = eslint;
+    this.severity = severity;
+
+    Object.freeze(this);
+}
+
+/**
+ * Passthrough to eslint.<span class="apidocCodeKeywordSpan">getSourceCode</span>().
+ * @returns {SourceCode} The SourceCode object for the code.
+ */
+getSourceCode() {
+    return this.eslint.getSourceCode();
+}
+
+/**
+...</pre></li>
     </ul>
 
 
@@ -2479,7 +5105,23 @@ parent.type !== "Property") {
     }
     return null;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * @param {SourceCode} sourceCode The ESLint source code object
+ * @param {ASTNode} node The node to be checked.
+ * @returns {boolean} True if the node is parenthesised.
+ * @private
+ */
+function isParenthesised(sourceCode, node) {
+    const previousToken = sourceCode.getTokenBefore(node),
+        nextToken = sourceCode.<span class="apidocCodeKeywordSpan">getTokenAfter</span>(node);
+
+    return Boolean(previousToken &amp;&amp; nextToken) &amp;&amp;
+        previousToken.value === "(" &amp;&amp; previousToken.range[1] &lt;= node.range[0] &amp;&amp;
+        nextToken.value === ")" &amp;&amp; nextToken.range[0] &gt;= node.range[1];
+}
+
+/**
+...</pre></li>
     </ul>
 
 
@@ -2497,7 +5139,22 @@ parent.type !== "Property") {
     }
     return null;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * Determines if a node is surrounded by parentheses.
+ * @param {SourceCode} sourceCode The ESLint source code object
+ * @param {ASTNode} node The node to be checked.
+ * @returns {boolean} True if the node is parenthesised.
+ * @private
+ */
+function isParenthesised(sourceCode, node) {
+    const previousToken = sourceCode.<span class="apidocCodeKeywordSpan">getTokenBefore</span>(node),
+        nextToken = sourceCode.getTokenAfter(node);
+
+    return Boolean(previousToken &amp;&amp; nextToken) &amp;&amp;
+        previousToken.value === "(" &amp;&amp; previousToken.range[1] &lt;= node.range[0] &amp;&amp;
+        nextToken.value === ")" &amp;&amp; nextToken.range[0] &gt;= node.range[1];
+}
+...</pre></li>
     </ul>
 
 
@@ -2700,7 +5357,24 @@ parent.type !== "Property") {
 
     messages.push(problem);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * @returns {SourceCode} The SourceCode object for the code.
+ */
+getSourceCode() {
+    return this.eslint.getSourceCode();
+}
+
+/**
+ * Passthrough to eslint.<span class="apidocCodeKeywordSpan">report</span>() that automatically assigns the rule ID and severity
+.
+ * @param {ASTNode|MessageDescriptor} nodeOrDescriptor The AST node related to the message or a message
+ *      descriptor.
+ * @param {Object=} location The location of the error.
+ * @param {string} message The message to display to the user.
+ * @param {Object} opts Optional template data which produces a formatted message
+ *     with symbols being replaced by this object's values.
+ * @returns {void}
+...</pre></li>
     </ul>
 
 
@@ -2867,6 +5541,1112 @@ parent.type !== "Property") {
 
 
 
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint.logging" id="apidoc.module.eslint.logging">module eslint.logging</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.logging.error" id="apidoc.element.eslint.logging.error">
+        function <span class="apidocSignatureSpan">eslint.logging.</span>error
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">error() {
+    console.error.apply(console, Array.prototype.slice.call(arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.logging.info" id="apidoc.element.eslint.logging.info">
+        function <span class="apidocSignatureSpan">eslint.logging.</span>info
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">info() {
+    console.log.apply(console, Array.prototype.slice.call(arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint.options" id="apidoc.module.eslint.options">module eslint.options</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.options.generateHelp" id="apidoc.element.eslint.options.generateHelp">
+        function <span class="apidocSignatureSpan">eslint.options.</span>generateHelp
+        <span class="apidocSignatureSpan">(arg$)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">generateHelp = function (arg$){
+  var ref$, showHidden, interpolate, maxWidth, output, out, data, optionCount, totalPreLen, preLens, i$, len$, item, that, pre,
+descParts, desc, preLen, sortedPreLens, maxPreLen, preLenMean, x, padAmount, descSepLen, fullWrapCount, partialWrapCount, descLen
+, totalLen, initialSpace, wrapAllFull, i, wrap;
+  ref$ = arg$ != null
+    ? arg$
+    : {}, showHidden = ref$.showHidden, interpolate = ref$.interpolate;
+  maxWidth = stdout != null &amp;&amp; stdout.isTTY ? stdout.columns - 1 : null;
+  output = [];
+  out = function(it){
+    return output.push(it != null ? it : '');
+  };
+  if (prepend) {
+    out(interpolate ? interp(prepend, interpolate) : prepend);
+    out();
+  }
+  data = [];
+  optionCount = 0;
+  totalPreLen = 0;
+  preLens = [];
+  for (i$ = 0, len$ = (ref$ = options).length; i$ &lt; len$; ++i$) {
+    item = ref$[i$];
+    if (showHidden || !item.hidden) {
+      if (that = item.heading) {
+        data.push({
+          type: 'heading',
+          value: that
+        });
+      } else {
+        pre = getPreText(item, helpStyle, maxWidth);
+        descParts = [];
+        if ((that = item.description) != null) {
+          descParts.push(that);
+        }
+        if (that = item['enum']) {
+          descParts.push("either: " + naturalJoin(that));
+        }
+        if (item['default'] &amp;&amp; !item.negateName) {
+          descParts.push("default: " + item['default']);
+        }
+        desc = descParts.join(' - ');
+        data.push({
+          type: 'option',
+          pre: pre,
+          desc: desc,
+          descLen: desc.length
+        });
+        preLen = pre.length;
+        optionCount++;
+        totalPreLen += preLen;
+        preLens.push(preLen);
+      }
+    }
+  }
+  sortedPreLens = sort(preLens);
+  maxPreLen = sortedPreLens[sortedPreLens.length - 1];
+  preLenMean = initialIndent + totalPreLen / optionCount;
+  x = optionCount &gt; 2 ? min(preLenMean * maxPadFactor, maxPreLen) : maxPreLen;
+  for (i$ = sortedPreLens.length - 1; i$ &gt;= 0; --i$) {
+    preLen = sortedPreLens[i$];
+    if (preLen &lt;= x) {
+      padAmount = preLen;
+      break;
+    }
+  }
+  descSepLen = descriptionSeparator.length;
+  if (maxWidth != null) {
+    fullWrapCount = 0;
+    partialWrapCount = 0;
+    for (i$ = 0, len$ = data.length; i$ &lt; len$; ++i$) {
+      item = data[i$];
+      if (item.type === 'option') {
+        pre = item.pre, desc = item.desc, descLen = item.descLen;
+        if (descLen === 0) {
+          item.wrap = 'none';
+        } else {
+          preLen = max(padAmount, pre.length) + initialIndent + descSepLen;
+          totalLen = preLen + descLen;
+          if (totalLen &gt; maxWidth) {
+            if (descLen / 2.5 &gt; maxWidth - preLen) {
+              fullWrapCount++;
+              item.wrap = 'full';
+            } else {
+              partialWrapCount++;
+              item.wrap = 'partial';
+            }
+          } else {
+            item.wrap = 'none';
+          }
+        }
+      }
+    }
+  }
+  initialSpace = repeatString$(' ', initialIndent);
+  wrapAllFull = optionCount &gt; 1 &amp;&amp; fullWrapCount + partialWrapCount * 0.5 &gt; optionCount * 0.5;
+  for (i$ = 0, len$ = data.length; i$ &lt; len$; ++i$) {
+    i = i$;
+    item = data[i$];
+    if (item.type === 'heading') {
+      if (i !== 0) {
+        out();
+      }
+      out(item.value + ":");
+    } else {
+      pre = item.pre, desc = item.desc, descLen = item.descLen, wrap = item.wrap;
+      if (maxWidth != null) {
+        if (wrapAllFull || wrap === 'full') {
+          wrap = wordwrap(initialIndent + secondaryIndent, maxWidth);
+          out(initialSpace + "" + pre + "\n" + wrap(desc));
+          continue;
+        } else if (wrap === 'partial') {
+          wrap = wordwrap(initialIndent + descSepLen + max(padAmount, pre.length), maxWidth);
+          out(initialSpace + "" + pad(pre, padAmount) + descriptionSeparator + wrap(desc).replace(/^\s+/, ''));
+          continue;
+        }
+      }
+      if (descLen === 0) {
+        out(initialSpace + "" + pre);
+      } else {
+        out(initialSpace + "" + pad(pre, padAmount) + descriptionSeparator + desc);
+      }
+    }
+  }
+  if (append) {
+    out();
+    out(interpola ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.options.generateHelpForOption" id="apidoc.element.eslint.options.generateHelpForOption">
+        function <span class="apidocSignatureSpan">eslint.options.</span>generateHelpForOption
+        <span class="apidocSignatureSpan">(optionName)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">generateHelpForOption = function (optionName){
+  var maxWidth, wrap, option, e, pre, defaultString, restPositionalString, description, fullDescription, that, preDescription, descriptionString
+, exampleString, examples, seperator;
+  maxWidth = stdout != null &amp;&amp; stdout.isTTY ? stdout.columns - 1 : null;
+  wrap = maxWidth ? wordwrap(maxWidth) : id;
+  try {
+    option = getOption(dasherize(optionName));
+  } catch (e$) {
+    e = e$;
+    return e.message;
+  }
+  pre = getPreText(option, helpStyle);
+  defaultString = option['default'] &amp;&amp; !option.negateName ? "\ndefault: " + option['default'] : '';
+  restPositionalString = option.restPositional ? 'Everything after this option is considered a positional argument, even if it looks
+ like an option.' : '';
+  description = option.longDescription || option.description &amp;&amp; sentencize(option.description);
+  fullDescription = description &amp;&amp; restPositionalString
+    ? description + " " + restPositionalString
+    : (that = description || restPositionalString) ? that : '';
+  preDescription = 'description:';
+  descriptionString = !fullDescription
+    ? ''
+    : maxWidth &amp;&amp; fullDescription.length - 1 - preDescription.length &gt; maxWidth
+      ? "\n" + preDescription + "\n" + wrap(fullDescription)
+      : "\n" + preDescription + " " + fullDescription;
+  exampleString = (that = option.example) ? (examples = [].concat(that), examples.length &gt; 1
+    ? "\nexamples:\n" + unlines(examples)
+    : "\nexample: " + examples[0]) : '';
+  seperator = defaultString || descriptionString || exampleString ? "\n" + repeatString$('=', pre.length) : '';
+  return pre + "" + seperator + defaultString + descriptionString + exampleString;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.options.parse" id="apidoc.element.eslint.options.parse">
+        function <span class="apidocSignatureSpan">eslint.options.</span>parse
+        <span class="apidocSignatureSpan">(input, arg$)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">parse = function (input, arg$){
+  var slice, obj, positional, restPositional, overrideRequired, prop, setValue, setDefaults, checkRequired, mutuallyExclusiveError
+, checkMutuallyExclusive, checkDependency, checkDependencies, checkProp, args, key, value, option, ref$, i$, len$, arg, that, result
+, short, argName, usingAssign, val, flags, len, j$, len1$, i, flag, opt, name, valPrime, negated, noedName;
+  slice = (arg$ != null
+    ? arg$
+    : {}).slice;
+  obj = {};
+  positional = [];
+  restPositional = false;
+  overrideRequired = false;
+  prop = null;
+  setValue = function(name, value){
+    var opt, val, cra, e, currentType;
+    opt = getOption(name);
+    if (opt.boolean) {
+      val = value;
+    } else {
+      try {
+        cra = opt.concatRepeatedArrays;
+        if (cra != null &amp;&amp; cra[0] &amp;&amp; cra[1].oneValuePerFlag &amp;&amp; opt.parsedType.length === 1 &amp;&amp; opt.parsedType[0].structure === 'array
+') {
+          val = [parseLevn(opt.parsedType[0].of, value)];
+        } else {
+          val = parseLevn(opt.parsedType, value);
+        }
+      } catch (e$) {
+        e = e$;
+        throw new Error("Invalid value for option '" + name + "' - expected type " + opt.type + ", received value: " + value + ".");
+      }
+      if (opt['enum'] &amp;&amp; !any(function(it){
+        return deepIs(it, val);
+      }, opt.parsedPossibilities)) {
+        throw new Error("Option " + name + ": '" + val + "' not one of " + naturalJoin(opt['enum']) + ".");
+      }
+    }
+    currentType = toString$.call(obj[name]).slice(8, -1);
+    if (obj[name] != null) {
+      if (opt.concatRepeatedArrays != null &amp;&amp; opt.concatRepeatedArrays[0] &amp;&amp; currentType === 'Array') {
+        obj[name] = obj[name].concat(val);
+      } else if (opt.mergeRepeatedObjects &amp;&amp; currentType === 'Object') {
+        import$(obj[name], val);
+      } else {
+        obj[name] = val;
+      }
+    } else {
+      obj[name] = val;
+    }
+    if (opt.restPositional) {
+      restPositional = true;
+    }
+    if (opt.overrideRequired) {
+      overrideRequired = true;
+    }
+  };
+  setDefaults = function(){
+    var name, ref$, value;
+    for (name in ref$ = defaults) {
+      value = ref$[name];
+      if (obj[name] == null) {
+        obj[name] = value;
+      }
+    }
+  };
+  checkRequired = function(){
+    var i$, ref$, len$, name;
+    if (overrideRequired) {
+      return;
+    }
+    for (i$ = 0, len$ = (ref$ = required).length; i$ &lt; len$; ++i$) {
+      name = ref$[i$];
+      if (!obj[name]) {
+        throw new Error("Option " + nameToRaw(name) + " is required.");
+      }
+    }
+  };
+  mutuallyExclusiveError = function(first, second){
+    throw new Error("The options " + nameToRaw(first) + " and " + nameToRaw(second) + " are mutually exclusive - you cannot use
+them at the same time.");
+  };
+  checkMutuallyExclusive = function(){
+    var rules, i$, len$, rule, present, j$, len1$, element, k$, len2$, opt;
+    rules = libOptions.mutuallyExclusive;
+    if (!rules) {
+      return;
+    }
+    for (i$ = 0, len$ = rules.length; i$ &lt; len$; ++i$) {
+      rule = rules[i$];
+      present = null;
+      for (j$ = 0, len1$ = rule.length; j$ &lt; len1$; ++j$) {
+        element = rule[j$];
+        if (toString$.call(element).slice(8, -1) === 'Array') {
+          for (k$ = 0, len2$ = element.length; k$ &lt; len2$; ++k$) {
+            opt = element[k$];
+            if (opt in obj) {
+              if (present != null) {
+                mutuallyExclusiveError(present, opt);
+              } else {
+                present = opt;
+                break;
+              }
+            }
+          }
+        } else {
+          if (element in obj) {
+            if (present != null) {
+              mutuallyExclusiveError(present, element);
+            } else {
+              present = element;
+            }
+          }
+        }
+      }
+    }
+  };
+  checkDependency = function(option){
+    var dependsOn, type, targetOptionNames, i$, len$, targetOptionName, targetOption;
+    dependsOn = option.dependsOn;
+    if (!dependsOn || option.dependenciesMet) {
+      return true;
+    }
+    type = dependsOn[0], targetOptionNames = slice$.call(dependsOn, 1);
+    for (i$ = 0, len$ = ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.options.parseArgv" id="apidoc.element.eslint.options.parseArgv">
+        function <span class="apidocSignatureSpan">eslint.options.</span>parseArgv
+        <span class="apidocSignatureSpan">(it)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">parseArgv = function (it){
+  return parse(it, {
+    slice: 2
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint.rule_context" id="apidoc.module.eslint.rule_context">module eslint.rule_context</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.rule_context.rule_context" id="apidoc.element.eslint.rule_context.rule_context">
+        function <span class="apidocSignatureSpan">eslint.</span>rule_context
+        <span class="apidocSignatureSpan">(ruleId, eslint, severity, options, settings, parserOptions, parserPath, meta, parserServices)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class RuleContext {
+
+<span class="apidocCodeCommentSpan">    /**
+     * @param {string} ruleId The ID of the rule using this object.
+     * @param {eslint} eslint The eslint object.
+     * @param {number} severity The configured severity level of the rule.
+     * @param {Array} options The configuration information to be added to the rule.
+     * @param {Object} settings The configuration settings passed from the config file.
+     * @param {Object} parserOptions The parserOptions settings passed from the config file.
+     * @param {Object} parserPath The parser setting passed from the config file.
+     * @param {Object} meta The metadata of the rule
+     * @param {Object} parserServices The parser services for the rule.
+     */
+</span>    constructor(ruleId, eslint, severity, options, settings, parserOptions, parserPath, meta, parserServices) {
+
+        // public.
+        this.id = ruleId;
+        this.options = options;
+        this.settings = settings;
+        this.parserOptions = parserOptions;
+        this.parserPath = parserPath;
+        this.meta = meta;
+
+        // create a separate copy and freeze it (it's not nice to freeze other people's objects)
+        this.parserServices = Object.freeze(Object.assign({}, parserServices));
+
+        // private.
+        this.eslint = eslint;
+        this.severity = severity;
+
+        Object.freeze(this);
+    }
+
+    /**
+     * Passthrough to eslint.getSourceCode().
+     * @returns {SourceCode} The SourceCode object for the code.
+     */
+    getSourceCode() {
+        return this.eslint.getSourceCode();
+    }
+
+    /**
+     * Passthrough to eslint.report() that automatically assigns the rule ID and severity.
+     * @param {ASTNode|MessageDescriptor} nodeOrDescriptor The AST node related to the message or a message
+     *      descriptor.
+     * @param {Object=} location The location of the error.
+     * @param {string} message The message to display to the user.
+     * @param {Object} opts Optional template data which produces a formatted message
+     *     with symbols being replaced by this object's values.
+     * @returns {void}
+     */
+    report(nodeOrDescriptor, location, message, opts) {
+
+        // check to see if it's a new style call
+        if (arguments.length === 1) {
+            const descriptor = nodeOrDescriptor;
+            let fix = null;
+
+            // if there's a fix specified, get it
+            if (typeof descriptor.fix === "function") {
+                fix = descriptor.fix(ruleFixer);
+            }
+
+            this.eslint.report(
+                this.id,
+                this.severity,
+                descriptor.node,
+                descriptor.loc || descriptor.node.loc.start,
+                descriptor.message,
+                descriptor.data,
+                fix,
+                this.meta
+            );
+
+            return;
+        }
+
+        // old style call
+        this.eslint.report(
+            this.id,
+            this.severity,
+            nodeOrDescriptor,
+            location,
+            message,
+            opts,
+            this.meta
+        );
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint.rule_context.prototype" id="apidoc.module.eslint.rule_context.prototype">module eslint.rule_context.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.rule_context.prototype.getAllComments" id="apidoc.element.eslint.rule_context.prototype.getAllComments">
+        function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>getAllComments
+        <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getAllComments = function (a, b, c, d, e) {
+    return this.eslint[name](a, b, c, d, e);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.rule_context.prototype.getAncestors" id="apidoc.element.eslint.rule_context.prototype.getAncestors">
+        function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>getAncestors
+        <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getAncestors = function (a, b, c, d, e) {
+    return this.eslint[name](a, b, c, d, e);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.rule_context.prototype.getComments" id="apidoc.element.eslint.rule_context.prototype.getComments">
+        function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>getComments
+        <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getComments = function (a, b, c, d, e) {
+    return this.eslint[name](a, b, c, d, e);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+       return true;
+   }
+
+   // Checks `@this` in its leading comments for callbacks,
+   // because callbacks don't have its JSDoc comment.
+   // e.g.
+   //     sinon.test(/* @this sinon.Sandbox */function() { this.spy(); });
+   return sourceCode.<span class="apidocCodeKeywordSpan">getComments</span>(node).leading.some(comment =&gt; thisTagPattern.test
+(comment.value));
+}
+
+/**
+* Determines if a node is surrounded by parentheses.
+* @param {SourceCode} sourceCode The ESLint source code object
+* @param {ASTNode} node The node to be checked.
+* @returns {boolean} True if the node is parenthesised.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.rule_context.prototype.getDeclaredVariables" id="apidoc.element.eslint.rule_context.prototype.getDeclaredVariables">
+        function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>getDeclaredVariables
+        <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getDeclaredVariables = function (a, b, c, d, e) {
+    return this.eslint[name](a, b, c, d, e);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.rule_context.prototype.getFilename" id="apidoc.element.eslint.rule_context.prototype.getFilename">
+        function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>getFilename
+        <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getFilename = function (a, b, c, d, e) {
+    return this.eslint[name](a, b, c, d, e);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.rule_context.prototype.getFirstToken" id="apidoc.element.eslint.rule_context.prototype.getFirstToken">
+        function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>getFirstToken
+        <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getFirstToken = function (a, b, c, d, e) {
+    return this.eslint[name](a, b, c, d, e);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+* @param {ASTNode} node - The function node to get.
+* @param {SourceCode} sourceCode - The source code object to get tokens.
+* @returns {Token} `(` token.
+*/
+function getOpeningParenOfParams(node, sourceCode) {
+   return node.id
+       ? sourceCode.getTokenAfter(node.id, isOpeningParenToken)
+       : sourceCode.<span class="apidocCodeKeywordSpan">getFirstToken</span>(node, isOpeningParenToken);
+}
+
+/**
+* Creates a version of the LINEBREAK_MATCHER regex with the global flag.
+* Global regexes are mutable, so this needs to be a function instead of a constant.
+* @returns {RegExp} A global regular expression that matches line terminators
+*/
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.rule_context.prototype.getFirstTokens" id="apidoc.element.eslint.rule_context.prototype.getFirstTokens">
+        function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>getFirstTokens
+        <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getFirstTokens = function (a, b, c, d, e) {
+    return this.eslint[name](a, b, c, d, e);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.rule_context.prototype.getJSDocComment" id="apidoc.element.eslint.rule_context.prototype.getJSDocComment">
+        function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>getJSDocComment
+        <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getJSDocComment = function (a, b, c, d, e) {
+    return this.eslint[name](a, b, c, d, e);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+/**
+ * Checks whether or not a node has a `@this` tag in its comments.
+ * @param {ASTNode} node - A node to check.
+ * @param {SourceCode} sourceCode - A SourceCode instance to get comments.
+ * @returns {boolean} Whether or not the node has a `@this` tag in its comments.
+ */
+function hasJSDocThisTag(node, sourceCode) {
+const jsdocComment = sourceCode.<span class="apidocCodeKeywordSpan">getJSDocComment</span>(node);
+
+if (jsdocComment &amp;&amp; thisTagPattern.test(jsdocComment.value)) {
+    return true;
+}
+
+// Checks `@this` in its leading comments for callbacks,
+// because callbacks don't have its JSDoc comment.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.rule_context.prototype.getLastToken" id="apidoc.element.eslint.rule_context.prototype.getLastToken">
+        function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>getLastToken
+        <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getLastToken = function (a, b, c, d, e) {
+    return this.eslint[name](a, b, c, d, e);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    * surrounding the node.
+    * @param {SourceCode} sourceCode The source code object
+    * @param {ASTNode} node An expression node
+    * @returns {string} The text representing the node, with all surrounding parentheses included
+    */
+    getParenthesisedText(sourceCode, node) {
+let leftToken = sourceCode.getFirstToken(node);
+let rightToken = sourceCode.<span class="apidocCodeKeywordSpan">getLastToken</span>(node);
+
+while (
+    sourceCode.getTokenBefore(leftToken) &amp;&amp;
+    sourceCode.getTokenBefore(leftToken).type === "Punctuator" &amp;&amp;
+    sourceCode.getTokenBefore(leftToken).value === "(" &amp;&amp;
+    sourceCode.getTokenAfter(rightToken) &amp;&amp;
+    sourceCode.getTokenAfter(rightToken).type === "Punctuator" &amp;&amp;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.rule_context.prototype.getLastTokens" id="apidoc.element.eslint.rule_context.prototype.getLastTokens">
+        function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>getLastTokens
+        <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getLastTokens = function (a, b, c, d, e) {
+    return this.eslint[name](a, b, c, d, e);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.rule_context.prototype.getNodeByRangeIndex" id="apidoc.element.eslint.rule_context.prototype.getNodeByRangeIndex">
+        function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>getNodeByRangeIndex
+        <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getNodeByRangeIndex = function (a, b, c, d, e) {
+    return this.eslint[name](a, b, c, d, e);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.rule_context.prototype.getScope" id="apidoc.element.eslint.rule_context.prototype.getScope">
+        function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>getScope
+        <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getScope = function (a, b, c, d, e) {
+    return this.eslint[name](a, b, c, d, e);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.rule_context.prototype.getSource" id="apidoc.element.eslint.rule_context.prototype.getSource">
+        function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>getSource
+        <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getSource = function (a, b, c, d, e) {
+    return this.eslint[name](a, b, c, d, e);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.rule_context.prototype.getSourceLines" id="apidoc.element.eslint.rule_context.prototype.getSourceLines">
+        function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>getSourceLines
+        <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getSourceLines = function (a, b, c, d, e) {
+    return this.eslint[name](a, b, c, d, e);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.rule_context.prototype.getTokenAfter" id="apidoc.element.eslint.rule_context.prototype.getTokenAfter">
+        function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>getTokenAfter
+        <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getTokenAfter = function (a, b, c, d, e) {
+    return this.eslint[name](a, b, c, d, e);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * @param {SourceCode} sourceCode The ESLint source code object
+ * @param {ASTNode} node The node to be checked.
+ * @returns {boolean} True if the node is parenthesised.
+ * @private
+ */
+function isParenthesised(sourceCode, node) {
+    const previousToken = sourceCode.getTokenBefore(node),
+        nextToken = sourceCode.<span class="apidocCodeKeywordSpan">getTokenAfter</span>(node);
+
+    return Boolean(previousToken &amp;&amp; nextToken) &amp;&amp;
+        previousToken.value === "(" &amp;&amp; previousToken.range[1] &lt;= node.range[0] &amp;&amp;
+        nextToken.value === ")" &amp;&amp; nextToken.range[0] &gt;= node.range[1];
+}
+
+/**
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.rule_context.prototype.getTokenBefore" id="apidoc.element.eslint.rule_context.prototype.getTokenBefore">
+        function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>getTokenBefore
+        <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getTokenBefore = function (a, b, c, d, e) {
+    return this.eslint[name](a, b, c, d, e);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * Determines if a node is surrounded by parentheses.
+ * @param {SourceCode} sourceCode The ESLint source code object
+ * @param {ASTNode} node The node to be checked.
+ * @returns {boolean} True if the node is parenthesised.
+ * @private
+ */
+function isParenthesised(sourceCode, node) {
+    const previousToken = sourceCode.<span class="apidocCodeKeywordSpan">getTokenBefore</span>(node),
+        nextToken = sourceCode.getTokenAfter(node);
+
+    return Boolean(previousToken &amp;&amp; nextToken) &amp;&amp;
+        previousToken.value === "(" &amp;&amp; previousToken.range[1] &lt;= node.range[0] &amp;&amp;
+        nextToken.value === ")" &amp;&amp; nextToken.range[0] &gt;= node.range[1];
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.rule_context.prototype.getTokenByRangeStart" id="apidoc.element.eslint.rule_context.prototype.getTokenByRangeStart">
+        function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>getTokenByRangeStart
+        <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getTokenByRangeStart = function (a, b, c, d, e) {
+    return this.eslint[name](a, b, c, d, e);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.rule_context.prototype.getTokens" id="apidoc.element.eslint.rule_context.prototype.getTokens">
+        function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>getTokens
+        <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getTokens = function (a, b, c, d, e) {
+    return this.eslint[name](a, b, c, d, e);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.rule_context.prototype.getTokensAfter" id="apidoc.element.eslint.rule_context.prototype.getTokensAfter">
+        function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>getTokensAfter
+        <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getTokensAfter = function (a, b, c, d, e) {
+    return this.eslint[name](a, b, c, d, e);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.rule_context.prototype.getTokensBefore" id="apidoc.element.eslint.rule_context.prototype.getTokensBefore">
+        function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>getTokensBefore
+        <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getTokensBefore = function (a, b, c, d, e) {
+    return this.eslint[name](a, b, c, d, e);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.rule_context.prototype.getTokensBetween" id="apidoc.element.eslint.rule_context.prototype.getTokensBetween">
+        function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>getTokensBetween
+        <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getTokensBetween = function (a, b, c, d, e) {
+    return this.eslint[name](a, b, c, d, e);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.rule_context.prototype.markVariableAsUsed" id="apidoc.element.eslint.rule_context.prototype.markVariableAsUsed">
+        function <span class="apidocSignatureSpan">eslint.rule_context.prototype.</span>markVariableAsUsed
+        <span class="apidocSignatureSpan">(a, b, c, d, e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">markVariableAsUsed = function (a, b, c, d, e) {
+    return this.eslint[name](a, b, c, d, e);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint.rules" id="apidoc.module.eslint.rules">module eslint.rules</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.rules.define" id="apidoc.element.eslint.rules.define">
+        function <span class="apidocSignatureSpan">eslint.rules.</span>define
+        <span class="apidocSignatureSpan">(ruleId, ruleModule)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function define(ruleId, ruleModule) {
+    rules[ruleId] = ruleModule;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.rules.get" id="apidoc.element.eslint.rules.get">
+        function <span class="apidocSignatureSpan">eslint.rules.</span>get
+        <span class="apidocSignatureSpan">(ruleId)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getHandler(ruleId) {
+    if (typeof rules[ruleId] === "string") {
+        return require(rules[ruleId]);
+    }
+    return rules[ruleId];
+
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    rules = require("../lib/rules");
+
+//------------------------------------------------------------------------------
+// Helpers
+//------------------------------------------------------------------------------
+
+const enabledRules = Object.keys(load()).reduce((result, ruleId) =&gt; {
+    if (!rules.<span class="apidocCodeKeywordSpan">get</span>(ruleId).meta.deprecated) {
+        result[ruleId] = "error";
+    }
+    return result;
+}, {});
+
+//------------------------------------------------------------------------------
+// Public Interface
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.rules.getAllLoadedRules" id="apidoc.element.eslint.rules.getAllLoadedRules">
+        function <span class="apidocSignatureSpan">eslint.rules.</span>getAllLoadedRules
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getAllLoadedRules() {
+    const allRules = new Map();
+
+    Object.keys(rules).forEach(name =&gt; {
+        const rule = getHandler(name);
+
+        allRules.set(name, rule);
+    });
+    return allRules;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.rules.importPlugin" id="apidoc.element.eslint.rules.importPlugin">
+        function <span class="apidocSignatureSpan">eslint.rules.</span>importPlugin
+        <span class="apidocSignatureSpan">(plugin, pluginName)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function importPlugin(plugin, pluginName) {
+    if (plugin.rules) {
+        Object.keys(plugin.rules).forEach(ruleId =&gt; {
+            const qualifiedRuleId = `${pluginName}/${ruleId}`,
+                rule = plugin.rules[ruleId];
+
+            define(qualifiedRuleId, rule);
+        });
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.rules.load" id="apidoc.element.eslint.rules.load">
+        function <span class="apidocSignatureSpan">eslint.rules.</span>load
+        <span class="apidocSignatureSpan">(rulesDir, cwd)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function load(rulesDir, cwd) {
+    const newRules = loadRules(rulesDir, cwd);
+
+    Object.keys(newRules).forEach(ruleId =&gt; {
+        define(ruleId, newRules[ruleId]);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+            config = configToLoad;
+
+            if (config.extends) {
+                config = ConfigFile.applyExtends(config, filePath);
+            }
+        } else {
+            filePath = configToLoad;
+            config = ConfigFile.<span class="apidocCodeKeywordSpan">load</span>(filePath);
+        }
+
+    }
+
+    return config;
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.rules.testClear" id="apidoc.element.eslint.rules.testClear">
+        function <span class="apidocSignatureSpan">eslint.rules.</span>testClear
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function testClear() {
+    rules = Object.create(null);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.rules.testReset" id="apidoc.element.eslint.rules.testReset">
+        function <span class="apidocSignatureSpan">eslint.rules.</span>testReset
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">testReset() {
+    testClear();
+    load();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint.timing" id="apidoc.module.eslint.timing">module eslint.timing</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.eslint.timing.time" id="apidoc.element.eslint.timing.time">
+        function <span class="apidocSignatureSpan">eslint.timing.</span>time
+        <span class="apidocSignatureSpan">(key, fn)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function time(key, fn) {
+    if (typeof data[key] === "undefined") {
+        data[key] = 0;
+    }
+
+    return function() {
+        let t = process.hrtime();
+
+        fn.apply(null, Array.prototype.slice.call(arguments));
+        t = process.hrtime(t);
+        data[key] += t[0] * 1e3 + t[1] / 1e6;
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
 
 
 </div>
